@@ -1,6 +1,12 @@
+:root {
+  --color-black: #000;
+  --color-black-medium: #191918;
+  --color-white: #ffff;
+}
+
 body {
   font-size: 62.9%;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .container {
@@ -11,12 +17,12 @@ body {
 .header {
   width: 100%;
   height: 100%;
-  color: #fff;
-  background: #0c0c0c;
+  color: var(--color-white);
+  background: var(--color-black-medium);
 }
 
 .header a {
-  color: #fff;
+  color: var(--color-white);
 }
 
 nav {
@@ -64,7 +70,7 @@ nav {
 }
 
 .midia-social .icon {
-  color: #000;
+  color: var(--color-black);
 }
 
 .icon {
@@ -107,21 +113,21 @@ nav {
 .main {
   width: 100;
   height: 100%;
-  color: #000;
+  color: var(--color-black);
 }
 
-.projetos__title,
-.projetos__description {
+.project__title,
+.project__description {
   text-align: center;
   margin: 0 auto;
 }
-.projetos__title {
+.project__title {
   margin-top: 6rem;
   font-size: 2rem;
   font-weight: 700;
 }
 
-.projetos__description {
+.project__description {
   width: min(100%, 600px);
   margin-top: 0.9rem;
   font-size: 1rem;
@@ -133,9 +139,9 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  gap: 2rem;
   flex-wrap: wrap;
-
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 
 .card {
@@ -144,7 +150,7 @@ nav {
 
   border-radius: 0.4rem;
   padding: 20px 25px;
-  color: #fff;
+  color: var(--color-white);
   background: #464643;
 }
 
@@ -159,11 +165,51 @@ nav {
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 300;
-  text-align: left;
+  text-align: justify;
+}
+
+.card__link-container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0 3rem;
+  flex-wrap: wrap;
+  margin-top: 3.5rem;
 }
 
 .card__link {
-  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5.2rem;
+  height: 2rem;
+  
+  font-size: 1.2rem;
+  color: #f1ff00;
+  border: 1px solid #f1ff00;
+  border-radius: 10rem  2rem;
+  transition: all .3s ease;
+}
+
+.card__link:hover {
+  color: var(--color-black);
+  background: #f1ff00;  
+}
+
+/**/
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: var(--color-white);
+  background: var(--color-black-medium);
+}
+
+.footer p {
+  margin-left: 3px;
+  padding: 0;
 }
 
 @media (min-width: 760px) {

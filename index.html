@@ -1,84 +1,160 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio-Dev</title>
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio-Dev</title>
 
-  <link rel="stylesheet" href="./assets/fonts/style.css">
-  <link rel="stylesheet" href="./assets/fonts2/style.css">
-  <link rel="stylesheet" href="./assets/css/reset.css">
-  <link rel="stylesheet" href="./assets/css/index.css">
-</head>
-<body>
- <header class="header">
-   <nav class="container">
-     <a href="#" class="logo">portfolio <span class="logo--span">dev</span></a>     
-     <ul class="menu__list">
-      <li class="menu__item"><a href="#projetos">conheça os projetos</a></li>
-    </ul>
-     <div class="midia-social">
-       <a class="midia-social__a" href="https://www.linkedin.com/in/alexsandro-cristiano/" target="_blank" title="linkedin"><i class="icon icon-linkedin"></i></a>
-       <a class="midia-social__a" href="https://github.com/alexsandro-cristiano" target="_blank" title="github"><i class="icon icon-github"></i></a>
-       <a class="midia-social__a" href="https://www.instagram.com/alex_o_sander/" target="_blank" title="instagram"><i class="icon icon-instagram"></i></a>
-    </div>
-     <div class="icon icon-menu"></div>
-     <div class="icon icon-close"></div>
-   </nav>
-   <section id="introduction" class="container">
-     <div class="block-left">
-       <h1 class="block-left__title">alexsandro cristiano g. da silva</h1>
-       <p class="block-left__description">Desenvolvedor front-end e back-end do Rio de Janeiro, estudante de graduação em Analise e Desenvolvimento de Sistemas.</p>
-     </div>
-     <div class="block-right">
-       <img src="./assets/img/perfil.jfif" alt="Alexsandro">
-     </div>
-   </section>
- </header>
- <main class="main">
-   <section id="projetos">
-     <h2 class="projetos__title">Conheça meus Projetos</h2>
-     <p class="projetos__description">
-       Os projetos apresentados abaixo foram desenvolvidos sem fins lucrativos, com o intuito de colocar em prática os conteúdos teoricos estudado durante a graduação e cursos extracurriculares.
-     </p>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-     <div class="container block-cards">
-       <div class="card">
-         <h2 class="card__title">RockSité</h2>
-         <p class="card__description">Site desenvolvido no 2° periodo da graduação.Utilizado como tema base estilo musical rock n roll.</p>
-         <div class="card__link">
-           <a href="">Site</a>
-           <a href="">repositorio</a>
-         </div>
-       </div>
-       <div class="card">
-        <h2 class="card__title">titulo</h2>
-        <p class="card__description">lorem ipsum dolor</p>
-        <div class="card__link">
-          <button><a href="#">Link 1</a></button>
-          <button><a href="#">Link 2</a></button>
+    <link rel="stylesheet" href="./assets/fonts/style.css" />
+    <link rel="stylesheet" href="./assets/fonts2/style.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="container">
+        <a href="#" class="logo"
+          >portfolio <span class="logo--span">dev</span></a
+        >
+        <ul class="menu__list">
+          <li class="menu__item"><a href="#project">conheça os projetos</a></li>
+        </ul>
+        <div class="midia-social">
+          <a
+            class="midia-social__a"
+            href="https://www.linkedin.com/in/alexsandro-cristiano/"
+            target="_blank"
+            title="linkedin"
+            ><i class="icon icon-linkedin"></i
+          ></a>
+          <a
+            class="midia-social__a"
+            href="https://github.com/alexsandro-cristiano"
+            target="_blank"
+            title="github"
+            ><i class="icon icon-github"></i
+          ></a>
+          <a
+            class="midia-social__a"
+            href="https://www.instagram.com/alex_o_sander/"
+            target="_blank"
+            title="instagram"
+            ><i class="icon icon-instagram"></i
+          ></a>
         </div>
-      </div>
-      <div class="card">
-        <h2 class="card__title">titulo</h2>
-        <p class="card__description">lorem ipsum dolor</p>
-        <div class="card__link">
-          <button><a href="#">Link 1</a></button>
-          <button><a href="#">Link 2</a></button>
+        <div class="icon icon-menu"></div>
+        <div class="icon icon-close"></div>
+      </nav>
+      <section id="introduction" class="container">
+        <div class="block-left">
+          <h1 class="block-left__title">alexsandro cristiano g. da silva</h1>
+          <p class="block-left__description">
+            Desenvolvedor front-end e back-end do Rio de Janeiro, estudante de
+            graduação em Analise e Desenvolvimento de Sistemas.
+          </p>
         </div>
-      </div>
-     </div>
-     </div>
-     <a href="#">Conheça meu Github</a>
-   </section>
- </main>
- <footer class="footer">
-   By Alexsandro
- </footer>
-</body>
+        <div class="block-right">
+          <img src="./assets/img/perfil.jfif" alt="Alexsandro" />
+        </div>
+      </section>
+    </header>
+    <main class="main">
+      <section id="project">
+        <h2 class="project__title">Projetos</h2>
+        <p class="project__description">
+          Os projetos abaixo foram desenvolvidos sem fins lucrativos. Sendo o
+          objetivo princial colocar em prática os conteúdos teoricos estudado
+          durante a graduação e cursos extracurrículares.
+        </p>
+        <div class="container block-cards">
+          
+          <div class="card">
+            <h2 class="card__title">RockSité</h2>
+            <p class="card__description">
+              Site desenvolvido no 2° periodo da graduação.Utilizado como tema
+              base estilo musical rock n roll.
+            </p>
+            <div class="card__link-container">
+              <a class="card__link" href="">web</a>
+              <a  class="card__link" href="">github</a>
+            </div>
+          </div>
+          <!--inicio-->
+          <div class="card">
+            <h2 class="card__title">RockSité</h2>
+            <p class="card__description">
+              Site desenvolvido no 2° periodo da graduação.Utilizado como tema
+              base estilo musical rock n roll.
+            </p>
+            <div class="card__link">
+              <a href="">link 1</a>
+              <a href="">link2</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h2 class="card__title">RockSité</h2>
+            <p class="card__description">
+              Site desenvolvido no 2° periodo da graduação.Utilizado como tema
+              base estilo musical rock n roll.
+            </p>
+            <div class="card__link">
+              <a href="">link 1</a>
+              <a href="">link2</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h2 class="card__title">RockSité</h2>
+            <p class="card__description">
+              Site desenvolvido no 2° periodo da graduação.Utilizado como tema
+              base estilo musical rock n roll.
+            </p>
+            <div class="card__link">
+              <a href="">link 1</a>
+              <a href="">link2</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h2 class="card__title">RockSité</h2>
+            <p class="card__description">
+              Site desenvolvido no 2° periodo da graduação.Utilizado como tema
+              base estilo musical rock n roll.
+            </p>
+            <div class="card__link">
+              <a href="">link 1</a>
+              <a href="">link2</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h2 class="card__title">RockSité</h2>
+            <p class="card__description">
+              Site desenvolvido no 2° periodo da graduação.Utilizado como tema
+              base estilo musical rock n roll.
+            </p>
+            <div class="card__link">
+              <a href="">link 1</a>
+              <a href="">link2</a>
+            </div>
+          </div>
+          <!--fim-->
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>2022</p>
+      <p>Desenvolvido by Alexsandro</p>
+    </footer>
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>
