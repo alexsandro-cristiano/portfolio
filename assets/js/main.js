@@ -13,7 +13,7 @@ const projectsData = [
     description:
       "Página desenvolvida com a inspiração do layout da NLW Heart. Objetivo de ser meu cartão de visita",
     linkGithub: "https://github.com/alexsandro-cristiano/cartao-de-visita",
-    linkWeb: "https://rocksite.netlify.app/",
+    linkWeb: "https://cartaovisita.netlify.app/",
   },
   {
     id: 2,
