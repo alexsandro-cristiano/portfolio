@@ -1,13 +1,21 @@
 :root {
-  --color-gray-dark: #343a40;
-  --color-black: #000;
-  --color-black-medium: #191918;
-  --color-yellow: #f1ff00;
+  --color-black-olive: #353531;
+  --color-black: #000000;
+  --color-blue-spanish: #016fb9;
+  --color-yellow: #ff9505;
+  --color-flame:#ec4e20;
   --color-white: #ffff;
 }
 
-body {
+body{
+  font-family: 'Open Sans';
   font-size: 62.9%;
+  background: var(--color-blue-spanish);
+
+}
+
+/*
+body {
   font-family: "Inter", sans-serif;
 }
 
@@ -141,8 +149,7 @@ section {
   font-size: 1rem;
 }
 
-/* Cards */
-
+/* Cards 
 .block-cards {
   display: flex;
   align-items: center;
