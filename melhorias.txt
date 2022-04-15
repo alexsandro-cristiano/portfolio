@@ -1,0 +1,16 @@
+# header
+
+trocar nome do site de portfolio dev para <Alexsandro>
+adicionar rolagem suave
+adicionar entrada de elementos de cima para baixo
+
+construir menu com
+ - projetos
+ - sobre mim
+ - tecnologias que eu sei
+ - um botão para curriculo
+
+deixar o site responsivo
+
+Entre em contato
+
