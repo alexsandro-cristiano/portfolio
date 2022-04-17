@@ -3,8 +3,13 @@
   --color-black: #000000;
   --color-blue-spanish: #016fb9;
   --color-mostarda: #ff9505;
-  --color-flame:#ec4e20;
+  --color-flame: #ec4e20;
   --color-white: #ffff;
+  --color-silver-metallic: #9da2ab;
+
+  --header-height: 4.5rem;
+  --fontSize-title: 1.8rem;
+  --fontSize-subtitle: 1.2rem;
 }
 
 body {
@@ -16,6 +21,18 @@ body {
 .container {
   margin-left: 2.5rem;
   margin-right: 2.5rem;
+}
+
+section {
+  margin-top: 1.6rem;
+}
+
+.title {
+  font-size: var(--fontSize-title);
+}
+
+.subtitle {
+  font-size: var(--fontSize-subtitle);
 }
 
 #header {
@@ -30,20 +47,21 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: .8rem;
+  padding-top: 0.8rem;
 }
 
 nav .logo {
   font-size: 1.2rem;
   font-weight: 600;
   text-transform: capitalize;
+  color: var(--color-black-olive);
 }
 
 nav .menu {
   opacity: 0;
   visibility: hidden;
   top: -20rem;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 nav .menu__list {
@@ -53,15 +71,17 @@ nav .menu__list {
   gap: 0 0.8rem;
 }
 
-nav  .menu__item, a {
+nav .menu__item,
+a {
   color: var(--color-black-olive);
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 600;
   text-transform: uppercase;
   position: relative;
 }
 
-nav  .menu__item, a:hover {
+nav .menu__item,
+a:hover {
   color: var(--color-white);
 }
 
@@ -72,11 +92,11 @@ nav ul li a::after {
   background: var(--color-flame);
   position: absolute;
   left: 0;
-  bottom: -.3rem;
+  bottom: -0.3rem;
   transition: width 0.3s;
 }
 
-nav ul li a:hover::after{
+nav ul li a:hover::after {
   width: 100%;
 }
 
@@ -99,6 +119,64 @@ nav.show div.icon-close {
   visibility: visible;
   opacity: 1;
   top: 1.5rem;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+}
+
+#apresentacao {
+  margin-top: 3rem;
+  height: 70vh;
+}
+
+#apresentacao h2.title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-transform: capitalize;
+
+  color: var(--color-black);
+  margin: 0;
+}
+
+#apresentacao .subtitle {
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-top: 0.8rem;
+  color: var(--color-black);
+}
+
+#apresentacao .desription {
+  font-size: 0.9rem;
+  font-weight: 500;
+  width: 340px;
+  text-align: left;
+  line-height: 1.2rem;
+  color: var(--color-silver-metallic);
+}
+
+.destaque {
+  color: var(--color-mostarda);
+}
+
+.midia-social {
+  display: flex;
+}
+
+.midia-social__a {
+  margin-right: 1rem;
+  padding: 0.4rem;
+  text-align: center;
+  border-radius: 1rem;
+  background: var(--color-black-olive);
+}
+
+.midia-social .icon {
+  color: var(--color-silver-metallic);
+}
+.midia-social .icon:hover {
+  color: var(--color-mostarda);
 }
 
 #footer {
