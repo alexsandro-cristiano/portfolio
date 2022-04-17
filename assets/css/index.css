@@ -100,3 +100,13 @@ nav.show div.icon-close {
   opacity: 1;
   top: 1.5rem;
 }
+
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-black-olive);
+  height: 4.5rem;
+  font-size: 1rem;
+  background: var(--color-mostarda);
+}
