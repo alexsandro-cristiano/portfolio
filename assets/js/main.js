@@ -73,9 +73,22 @@ function handleMenu() {
   }
 }
 
+function handleLinkMenu() {
+  /* quando clicar em um item do menu, esconder o menu */
+  const links = document.querySelectorAll('nav .menu__list .menu__item a')
+  const nav = document.querySelector('#header nav')
+
+  for (const link of links) {
+    link.addEventListener('click', function () {
+      nav.classList.remove('show')
+    })
+  }
+}
+
 function init() {
   populateHTML()
   handleMenu()
+  handleLinkMenu()
 
   const header = document.querySelector('#header')
   const navHeight = header.offsetHeight

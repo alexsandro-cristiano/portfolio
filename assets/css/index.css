@@ -44,7 +44,7 @@ img {
 
 /* HEADER */
 #header {
-  height: 4.5rem;
+  height: var(--header-height);
   position: fixed;
   top: 0;
   left: 0;
@@ -183,7 +183,7 @@ section .header p.subtitle {
 }
 
 #apresentacao {
-  margin-top: 15rem;
+  margin-top: 12rem;
   height: 70vh;
 }
 
