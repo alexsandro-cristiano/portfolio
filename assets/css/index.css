@@ -55,7 +55,7 @@ img {
 .header--show {
   background: var(--color-mostarda);
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
-  transition: .7s;
+  transition: 0.7s;
 }
 
 nav {
@@ -76,14 +76,33 @@ nav .menu {
   opacity: 0;
   visibility: hidden;
   top: -20rem;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 nav .menu__list {
   display: none;
+}
+
+nav.show .menu {
+  background: var(--color-mostarda);
+  opacity: 1;
+  visibility: visible;
+  height: 69vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+nav.show .menu .menu__list {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 0 0.8rem;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.6rem;
+  margin-top: 2.5rem;
+  padding: 1.2rem;
 }
 
 nav .menu__item a {
@@ -95,7 +114,7 @@ nav .menu__item a {
 }
 
 nav .menu__item a:hover {
-  color: var(--color-white);
+  color: var(--color-silver-metallic);
 }
 
 nav ul li a::after {
@@ -164,7 +183,7 @@ section .header p.subtitle {
 }
 
 #apresentacao {
-  margin-top: 12rem;
+  margin-top: 15rem;
   height: 70vh;
 }
 
@@ -204,7 +223,7 @@ section .header p.subtitle {
   text-align: center;
   border-radius: 1rem;
   background: var(--color-black-olive);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .midia-social .icon {
@@ -222,10 +241,9 @@ section .header p.subtitle {
   font-size: 1rem;
 }
 
-.about__div img{
+.about__div img {
   width: 400px;
   height: 350px;
-  border: 1px solid red;
 }
 
 .conteudo--link {

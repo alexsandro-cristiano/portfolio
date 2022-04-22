@@ -69,7 +69,6 @@ function handleMenu() {
   for (const element of icons) {
     element.addEventListener('click', () => {
       nav.classList.toggle('show')
-      console.log('ok')
     })
   }
 }
