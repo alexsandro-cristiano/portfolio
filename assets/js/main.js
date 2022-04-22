@@ -19,7 +19,7 @@ const projectsData = [
   },
   {
     id: 2,
-    name: 'DS Movie',
+    name: 'AC Movie',
     tec: 'react, java',
     description:
       'Catálogo de filmes para ser avaliado, a página foi desenvolvida durante a semana Spring React do professor Nelio Alves.',
@@ -39,7 +39,7 @@ const projectsData = [
 function createElementCard(indice) {
   const currentElement = projectsData[indice]
   const html = `
-    <div class="card">
+    <div class="card card-project">
             <div class="card__header">
               <h2 class="card__title">${currentElement.name}</h2>
               <div class="card__icon-link">
