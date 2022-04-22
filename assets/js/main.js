@@ -90,6 +90,19 @@ function init() {
   handleMenu()
   handleLinkMenu()
 
+  const scrollReveal = ScrollReveal({
+    origin: 'top',
+    distance: '50px',
+    duration: 700,
+    reset: true,
+  })
+
+  scrollReveal.reveal(
+    `#apresentacao, #apresentacao .title, #apresentacao .subtitle, #apresentacao .description, #apresentacao .midia-social
+    `,
+    { interval: 100 }
+  )
+
   const header = document.querySelector('#header')
   const navHeight = header.offsetHeight
   window.addEventListener('scroll', function () {

@@ -20,6 +20,10 @@ body {
   background: var(--color-blue-spanish);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   margin-left: var(--width-container);
   margin-right: var(--width-container);
