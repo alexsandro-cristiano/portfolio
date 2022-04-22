@@ -2,6 +2,7 @@ const projectsData = [
   {
     id: 0,
     name: 'RockSité',
+    tec: 'html, css, js',
     description:
       'Site desenvolvido no 2° periodo da graduação.Utilizado como tema base estilo musical rock n roll.',
     linkGithub: 'https://github.com/alexsandro-cristiano/rocksite',
@@ -10,6 +11,7 @@ const projectsData = [
   {
     id: 1,
     name: 'Cartão de Visita',
+    tec: 'html, css, js',
     description:
       'Página desenvolvida com a inspiração do layout da NLW Heart. Objetivo de ser meu cartão de visita',
     linkGithub: 'https://github.com/alexsandro-cristiano/cartao-de-visita',
@@ -18,23 +20,43 @@ const projectsData = [
   {
     id: 2,
     name: 'DS Movie',
+    tec: 'react, java',
     description:
       'Catálogo de filmes para ser avaliado, a página foi desenvolvida durante a semana Spring React do professor Nelio Alves.',
     linkGithub: 'https://github.com/alexsandro-cristiano/dsmovie',
     linkWeb: 'https://acmovie.netlify.app/',
   },
+  {
+    id: 3,
+    name: 'Portfolio Alexsandro',
+    tec: 'html, css, js',
+    description: 'Página para apresentar meus projeto pessoais e academicos.',
+    linkGithub: 'https://github.com/alexsandro-cristiano/portfolio',
+    linkWeb: 'https://alexsandrodev.netlify.app/',
+  },
 ]
 
 function createElementCard(indice) {
   const currentElement = projectsData[indice]
-  const html = `<div class="card">
-    <h2 class="card__title">${currentElement.name}</h2>
-    <p class="card__description">${currentElement.description}</p>
-    <div class="card__link-container">
-    <a class="card__link" href="${currentElement.linkWeb}">web</a>
-    <a  class="card__link" href="${currentElement.linkGithub}">github</a>
-    </div>
-    </div>`
+  const html = `
+    <div class="card">
+            <div class="card__header">
+              <h2 class="card__title">${currentElement.name}</h2>
+              <div class="card__icon-link">
+                <a  class="card__link" target='__black' href="${currentElement.linkGithub}"><i class="icon icon-github">
+                </i></a>
+                <a class="card__link" target='__black' href="${currentElement.linkWeb}"><i class="icon icon-globe"></i>
+                </a>
+                
+              </div>
+            </div>
+            <div class="card__content">
+              <p class="card__content--description">
+              ${currentElement.description}
+              </p>
+              <p class="card__content--description card__content--stack">${currentElement.tec}</p>
+            </div>
+          </div>`
   return html
 }
 
