@@ -30,6 +30,31 @@ html {
   margin-right: var(--width-container);
 }
 
+/* estilo na barra de rolagem */
+
+/* Works on Firefox */
+* {
+  scrollbar-width: 10px;
+  scrollbar-color: var(--color-flame) var(--color-silver-metallic);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background: var(--color-silver-metallic);
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--color-flame);
+  border-radius: 20px;
+}
+
 img {
   width: 100%;
   height: auto;
