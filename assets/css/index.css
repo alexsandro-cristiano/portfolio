@@ -41,6 +41,7 @@
 }
 
 body {
+  font-family: 'Inter', sans-serif;
   font-size: 62.9%;
   background: var(--color-blue-spanish);
 }
