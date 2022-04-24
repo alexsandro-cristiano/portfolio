@@ -374,8 +374,11 @@ img {
   background: var(--color-mostarda);
 }
 
-@media screen and (max-width: 767px) {
-  /**/
+@media (max-width: 400px) {
+  .card-project {
+    width: 24rem;
+    height: 15rem;
+  }
 }
 
 @media screen and (min-width: 768px) and (min-width: 1023px) {
