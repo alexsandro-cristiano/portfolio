@@ -1,16 +1,27 @@
-# header
+Tamanho de tela:
+ - 320 x 581 | 320 x 568
+ - 375 x 581
+ - 768 x 581
+ - 1024 x 581
+ 
+https://alexsandrosilva.netlify.app/
+https://ambientedev-alexsandrosilva.netlify.app/
 
-trocar nome do site de portfolio dev para <Alexsandro>
-adicionar rolagem suave
-adicionar entrada de elementos de cima para baixo
+@media screen and (min-width:1024px){}
+@media screen and (max-width:767px){}
 
-construir menu com
- - projetos
- - sobre mim
- - tecnologias que eu sei
+
+@media screen and (min-width:768px)and (min-width:1023px){}
+
+--------------------------------------
+construir sessao
  - um botão para curriculo
+ - Entre em contato
+
+
 
 deixar o site responsivo
 
-Entre em contato
+
+
 

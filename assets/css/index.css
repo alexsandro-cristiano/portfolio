@@ -260,6 +260,19 @@ img {
   margin-top: 2.5rem;
 }
 
+.centralizar,
+.centralizar .icon {
+  text-align: center;
+  margin-top: 7.5rem;
+  font-size: 2rem;
+  transition: 0.3s;
+  color: var(--color-mostarda);
+}
+
+.centralizar .icon:hover {
+  color: var(--color-flame);
+}
+
 .conteudo .text {
   text-align: justify;
   color: var(--color-white);

@@ -1,54 +1,47 @@
 const projectsData = [
   {
     id: 0,
+    name: 'Game Unravel Number',
+    tec: 'c',
+    description: 'Jogo utilizando a linguagem C.',
+    linkGithub: 'https://github.com/alexsandro-cristiano/game-unravel-number',
+    linkWeb: '',
+  },
+  {
+    id: 1,
     name: 'RockSité',
     tec: 'html, css, js',
     description:
       'Site desenvolvido no 2° periodo da graduação.Utilizado como tema base estilo musical rock n roll.',
     linkGithub: 'https://github.com/alexsandro-cristiano/rocksite',
-    linkWeb: 'https://rocksite.netlify.app/'
+    linkWeb: 'https://rocksite.netlify.app/',
   },
   {
-    id: 1,
+    id: 2,
     name: 'Cartão de Visita',
     tec: 'html, css, js',
     description:
       'Página desenvolvida com a inspiração do layout da NLW Heart. Objetivo de ser meu cartão de visita',
     linkGithub: 'https://github.com/alexsandro-cristiano/cartao-de-visita',
-    linkWeb: 'https://cartaovisita.netlify.app/'
-  },
-  {
-    id: 2,
-    name: 'AC Movie',
-    tec: 'react, java',
-    description:
-      'Catálogo de filmes para ser avaliado, a página foi desenvolvida durante a semana Spring React do professor Nelio Alves.',
-    linkGithub: 'https://github.com/alexsandro-cristiano/dsmovie',
-    linkWeb: 'https://acmovie.netlify.app/'
+    linkWeb: 'https://cartaovisita.netlify.app/',
   },
   {
     id: 3,
+    name: 'AC Movie',
+    tec: 'react, java',
+    description:
+      'Catálogo de filmes para ser avaliado, a página foi desenvolvida durante a semana Spring React da DevSuperior.',
+    linkGithub: 'https://github.com/alexsandro-cristiano/acmovie',
+    linkWeb: 'https://acmovie.netlify.app/',
+  },
+  {
+    id: 4,
     name: 'Portfolio Alexsandro',
     tec: 'html, css, js',
     description: 'Página para apresentar meus projeto pessoais e academicos.',
-    linkGithub: 'https://github.com/alexsandro-cristiano/portfolio',
-    linkWeb: 'https://alexsandrodev.netlify.app/'
-  }
-]
-
-const tecs = [
-  'react',
-  'bootstrap',
-  'java',
-  'spring boot',
-  'nodejs',
-  'php',
-  'c/c++',
-  'mysql',
-  'postgresql',
-  'git',
-  'github',
-  'uml'
+    linkGithub: 'https://github.com/alexsandro-cristiano/flappy-bird',
+    linkWeb: '',
+  },
 ]
 
 function createElementCard(indice) {
@@ -60,7 +53,7 @@ function createElementCard(indice) {
               <div class="card__icon-link">
                 <a  class="card__link" target='__black' href="${currentElement.linkGithub}"><i class="icon icon-github">
                 </i></a>
-                <a class="card__link" target='__black' href="${currentElement.linkWeb}"><i class="icon icon-globe"></i>
+                <a class="card__link" target='__black' href="${currentElement.linkWeb}"><i class="icon icon-external-link"></i>
                 </a>
               </div>
             </div>
@@ -80,34 +73,11 @@ function renderProjectCard(indice) {
   divContainerCard.insertAdjacentHTML('beforeend', cardHtml)
 }
 
-function projetos() {
+function populateHTML() {
   let i
   for (i = 0; i < projectsData.length; i++) {
     renderProjectCard(i)
   }
-}
-
-function renderSkillsCard(i) {
-  const divContainerCard = document.querySelector('.block-skills')
-  const html = `
-  <div class="skill">
-    <i class="icon icon-check-square"></i>
-    <p>${tecs[i]}</p>
-  </div>`
-
-  divContainerCard.insertAdjacentHTML('beforeend', html)
-}
-
-function skills() {
-  let i
-  for (i = 0; i < tecs.length; i++) {
-    renderSkillsCard(i)
-  }
-}
-
-function populateHTML() {
-  skills()
-  projetos()
 }
 
 function changeHeaderWhenScroll(header, navHeight) {
