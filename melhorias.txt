@@ -22,6 +22,8 @@ construir sessao
 
 deixar o site responsivo
 
+-> ajustar icone no layout mobile
+
 
 
 

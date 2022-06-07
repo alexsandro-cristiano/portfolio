@@ -10,8 +10,8 @@
   --color-sucesso: #09d109;
 
   --header-height: 4.5rem;
-  --fontSize-title: 2rem;
-  --fontSize-padrao: 1.6rem;
+  --fontSize-title: 1.6rem;
+  --fontSize-padrao: 1rem;
   --width-container: 1rem;
 }
 
@@ -42,7 +42,7 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  font-size: 62.9%;
+  font-size: 62.5%;
   background: var(--color-blue-spanish);
 }
 
@@ -219,7 +219,7 @@ section .header h2 {
 }
 
 section .header p.subtitle {
-  font-size: 1rem;
+  font-size: var(--fontSize-padrao);
 }
 
 #apresentacao {
@@ -228,13 +228,13 @@ section .header p.subtitle {
 }
 
 #apresentacao h2.title {
-  font-size: 2rem;
+  font-size: var(--fontSize-title);
   font-weight: 700;
   margin: 0;
 }
 
 #apresentacao .subtitle {
-  font-size: 1.2rem;
+  font-size: var(--fontSize-padrao);
   font-weight: 500;
   text-transform: capitalize;
   margin-top: 1rem;
@@ -262,8 +262,8 @@ img {
 
 .centralizar,
 .centralizar .icon {
+  visibility: hidden;
   text-align: center;
-  margin-top: 7.5rem;
   font-size: 2rem;
   transition: 0.3s;
   color: var(--color-mostarda);
@@ -392,20 +392,161 @@ img {
     width: 24rem;
     height: 15rem;
   }
+
+  .centralizar,
+  .centralizar .icon {
+    visibility: visible;
+    margin-top: 2.5rem;
+  }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1023px) {
+@media (min-width: 600px) {
   :root {
-    --header-height: 4.5rem;
     --fontSize-title: 2rem;
-    --fontSize-padrao: 1.6rem;
-    --width-container: 2.5rem;
+    --fontSize-padrao: 1.1rem;
+    --width-container: 2rem;
   }
+  .text {
+    font-size: var(--fontSize-padrao);
+  }
+
   .container {
     margin-left: var(--width-container);
     margin-right: var(--width-container);
   }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav .menu {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  nav .menu__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-size: var(--fontSize-padrao);
+    padding-bottom: 0.4rem;
+  }
+
+  nav .icon-menu,
+  nav .icon {
+    display: none;
+  }
+  .centralizar,
+  .centralizar .icon {
+    visibility: visible;
+    margin-top: 6.5rem;
+  }
+  #apresentacao {
+    margin-top: calc(4rem + (var(--header-height)));
+    height: 70vh;
+  }
+  .card-project {
+    width: 24rem;
+    height: 15rem;
+  }
+  img {
+    width: 70%;
+    height: 25rem;
+    object-fit: contain;
+    clip-path: polygon();
+  }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  :root {
+    --fontSize-title: 2.2rem;
+    --fontSize-padrao: 1.1rem;
+    --width-container: 2rem;
+  }
+
+  .text {
+    font-size: var(--fontSize-padrao);
+  }
+
+  .container {
+    margin-left: var(--width-container);
+    margin-right: var(--width-container);
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav .menu {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  nav .menu__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-size: var(--fontSize-padrao);
+    padding-bottom: 0.4rem;
+  }
+
+  nav .icon-menu,
+  nav .icon {
+    display: none;
+  }
+  .centralizar,
+  .centralizar .icon {
+    visibility: visible;
+    margin-top: 6.5rem;
+  }
+  #apresentacao {
+    margin-top: calc(4rem + (var(--header-height)));
+    height: 80vh;
+  }
+  .card-project {
+    width: 24rem;
+    height: 15rem;
+  }
+
+  .block-skills {
+    display: flex;
+    align-content: stretch;
+    justify-content: flex-start;
+    padding: 0.8rem;
+    flex-wrap: wrap;
+    gap: 1.1rem;
+  }
+
+  .skill {
+    display: flex;
+    align-items: center;
+    gap: 0 1rem;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 0.4rem;
+    background: var(--color-mostarda);
+    box-shadow: 2px 4px 5px black;
+  }
+
+  img {
+    width: 70%;
+    height: 25rem;
+    object-fit: contain;
+    clip-path: polygon();
+  }
+
+  .card-project {
+    width: 15rem;
+    height: 14rem;
+    padding: 1rem 2rem;
+    box-shadow: 10px 5px 8px rgba(0, 0, 0, 0.8);
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .midia-social__a {
     margin-right: 1rem;
@@ -413,7 +554,7 @@ img {
     text-align: center;
     border-radius: 1.1rem;
   }
-
+  
   .midia-social__a:hover,
   .midia-social .icon:hover {
     background: var(--color-black-olive);
