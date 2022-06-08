@@ -23,6 +23,9 @@ body.light {
   align-items: center;
   justify-content: space-between;
 }
+.destaque {
+  color: var(--yellow);
+}
 a {
   text-decoration: none;
 }

@@ -11,20 +11,31 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./assets/fonts/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/favicons/Web/icons8-work-32.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="./assets/css/index.css" />
   </head>
   <body>
-    <header class="header">
-      <nav class="nav container flex">
+    <header id="header">
+      <nav class="nav show container flex">
         <h1 class="logo"><span><</span>Alexsandro<span>/></span></h1>
-        <ul class="menuList flex">
-          <li class="menuItem"><a href="">Home</a></li>
-          <li class="menuItem"><a href="">Sobre</a></li>
-          <li class="menuItem"><a href="">Experiências</a></li>
-          <li class="menuItem"><a href="">Projetos</a></li>
-          <li class="menuItem"><a href="">Contato</a></li>
-        </ul>
+        <div class="menu">
+          <ul class="menuList flex">
+            <li class="menuItem"><a href="">Home</a></li>
+            <li class="menuItem"><a href="">Sobre</a></li>
+            <li class="menuItem"><a href="">Experiências</a></li>
+            <li class="menuItem"><a href="">Projetos</a></li>
+            <li class="menuItem"><a href="">Contato</a></li>
+          </ul>
+        </div>
+        <div class="icon icon-menu" id="i-menu"></div>
+        <div class="icon icon-close" id="i-close"></div>
       </nav>
     </header>
   </body>
+  <script type="module" src="./assets/js/main.js"></script>
 </html>
