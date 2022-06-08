@@ -53,3 +53,14 @@ a {
   font-size: var(--font-large);
   color: var(--white);
 }
+
+@media (max-width: 768px) {
+  #footer {
+    font-size: var(--font-medium);
+  }
+}
+@media (max-width: 425px) {
+  #footer {
+    font-size: var(--font-normal);
+  }
+}
