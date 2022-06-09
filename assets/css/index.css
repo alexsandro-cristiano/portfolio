@@ -32,11 +32,31 @@ a {
 
 #landing {
   margin-top: calc(0.5rem + (var(--header-height)));
-  background: var(--bg-dark-200);
 }
 .general {
-  height: 80vh;
+  padding: 1.5rem;
+  height: 60vh;
 }
+.general h2 {
+  font-size: 2.5rem;
+  color: var(--gray-100);
+  font-weight: 700;
+}
+.general h3 {
+  font-size: 1.5rem;
+  color: var(--gray-200);
+  font-weight: 600;
+  margin: 1rem 0 1.5rem 0;
+}
+.text {
+  font-size: var(--font-large);
+  color: var(--gray-200);
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02rem;
+  max-width: 600px;
+}
+
 .divisor {
   background: var(--bg-dark-200);
 
@@ -60,6 +80,19 @@ a {
   }
 }
 @media (max-width: 425px) {
+  .general {
+    height: 70vh;
+  }
+  .general h2 {
+    font-size: 1.5rem;
+  }
+  .general h3 {
+    font-size: var(--font-large);
+  }
+  .text {
+    font-size: var(--font-medium);
+  }
+
   #footer {
     font-size: var(--font-normal);
   }
