@@ -36,12 +36,16 @@ a {
   text-decoration: none;
 }
 #footer {
+  font-size: var(--font-large);
+  color: var(--white);
+  background: var(--gray-500);
+  height: 3em;
+}
+#footer div {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  font-size: var(--font-large);
-  color: var(--white);
 }
 
 @media (max-width: 768px) {

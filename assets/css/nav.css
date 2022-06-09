@@ -81,8 +81,11 @@
     font-size: var(--font-ex-large);
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 600px) {
   nav .icon-close {
     right: 3.2rem;
+  }
+  nav.show .menu {
+    height: 80vh;
   }
 }
