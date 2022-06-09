@@ -22,7 +22,8 @@
 .nav .menuList a:hover {
   color: var(--yellow);
 }
-.icon {
+.icon-close,
+.icon-menu {
   display: none;
 }
 @media (max-width: 768px) {

@@ -26,6 +26,10 @@ body.light {
 .destaque {
   color: var(--yellow);
 }
+.icon {
+  font-size: 1.5rem;
+  color: var(--yellow);
+}
 a {
   text-decoration: none;
 }
@@ -56,7 +60,15 @@ a {
   letter-spacing: 0.02rem;
   max-width: 600px;
 }
-
+.socialMidia {
+  display: flex;
+  margin-top: 1rem;
+}
+.socialMidiaLink {
+  padding: 0.5rem;
+  margin-right: 0.8rem;
+  text-align: center;
+}
 .divisor {
   background: var(--bg-dark-200);
 
@@ -81,7 +93,7 @@ a {
 }
 @media (max-width: 425px) {
   .general {
-    height: 70vh;
+    height: 65vh;
   }
   .general h2 {
     font-size: 1.5rem;
