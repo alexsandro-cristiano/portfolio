@@ -127,9 +127,12 @@
 }
 
 #progress-content-section .sectionContent p {
+  margin-top: 0.9rem;
   font-size: var(--font-large);
-  line-height: 1.8em;
-  color: var(--gray-100);
+  color: var(--gray-200);
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02rem;
 }
 
 #progress-content-section .sectionContent {
@@ -170,7 +173,8 @@
   width: 10rem;
   height: 3rem;
   border-radius: 0.4rem;
-  background: var(--bg-dark);
+  border: 2px solid var(--purple);
+  background: linear-gradient(to bottom right, var(--purple-dark), var(--blue) 100%);
   box-shadow: 2px 4px 5px black;
 }
 
