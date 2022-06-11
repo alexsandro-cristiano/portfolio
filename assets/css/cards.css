@@ -1,3 +1,162 @@
+.process-wrapper {
+  margin-top: 3.5rem;
+}
+
+#progress-bar-container {
+  position: relative;
+  margin: auto;
+  height: 100px;
+}
+
+#progress-bar-container ul {
+  padding: 0;
+  margin: 0;
+  padding-top: 15px;
+  z-index: 3;
+  position: absolute;
+  width: 100%;
+  margin-top: -40px;
+}
+
+#progress-bar-container li:before {
+  content: " ";
+  display: block;
+  margin: auto;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: solid 2px var(--purple);
+  transition: all ease 0.3s;
+}
+
+#progress-bar-container li.active:before,
+#progress-bar-container li:hover:before {
+  border: 2px solid var(--purple);
+  background: linear-gradient(to right, var(--purple-dark) 0%, var(--gray-100) 100%);
+}
+
+#progress-bar-container li {
+  float: left;
+  width: 20%;
+  text-align: center;
+  color: var(--gray-200);
+  cursor: pointer;
+  font-weight: 700;
+  transition: all ease 0.2s;
+  vertical-align: bottom;
+  height: 60px;
+  position: relative;
+}
+
+#progress-bar-container li .step-inner {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  font-size: var(--font-medium);
+}
+
+#progress-bar-container li.active,
+#progress-bar-container li:hover {
+  color: var(--yellow);
+}
+
+#progress-bar-container li:after {
+  content: " ";
+  display: block;
+  width: 6px;
+  height: 6px;
+  margin: auto;
+  background: var(--blue);
+  border: solid 7px var(--white);
+  border-radius: 50%;
+  margin-top: 40px;
+  box-shadow: 0 2px 13px -1px rgba(0, 0, 0, 0.8);
+  transition: all ease 0.2s;
+}
+
+#progress-bar-container li:hover:after {
+  background: var(--gray-600);
+}
+
+#progress-bar-container li.active:after {
+  background: var(--purple-dark);
+}
+
+#progress-bar-container #line {
+  width: 80%;
+  margin: auto;
+  background: var(--gray-100);
+  height: 6px;
+  position: absolute;
+  left: 10%;
+  top: 57px;
+  z-index: 1;
+  border-radius: 50px;
+  transition: all ease 0.9s;
+}
+
+#progress-bar-container #line-progress {
+  content: " ";
+  width: 3%;
+  height: 100%;
+  background: var(--yellow);
+  position: absolute;
+  z-index: 2;
+  border-radius: 50px;
+  transition: all ease 0.9s;
+}
+
+/**/
+#progress-content-section {
+  width: 90%;
+  margin: auto;
+  background: var(--gray-500);
+  border-radius: 4px;
+}
+
+#progress-content-section .sectionContent {
+  padding: 3rem 4rem;
+  text-align: center;
+}
+
+#progress-content-section .sectionContent h2 {
+  font-size: 17px;
+  text-transform: uppercase;
+  color: var(--white);
+  letter-spacing: 1px;
+}
+
+#progress-content-section .sectionContent p {
+  font-size: var(--font-large);
+  line-height: 1.8em;
+  color: var(--gray-100);
+}
+
+#progress-content-section .sectionContent {
+  /*display: none;*/
+  animation: FadeInUp 700ms ease 1;
+  animation-fill-mode: forwards;
+  transform: translateY(15px);
+  /*opacity: 0;*/
+}
+
+#progress-content-section .sectionContent.active {
+  display: block;
+}
+
+@keyframes FadeInUp {
+  0% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/**/
 .containerCards {
   display: flex;
   flex-wrap: wrap;

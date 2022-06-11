@@ -36,6 +36,9 @@ body.light {
 a {
   text-decoration: none;
 }
+ul {
+  list-style: none;
+}
 #footer {
   font-size: var(--font-large);
   color: var(--white);
