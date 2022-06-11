@@ -19,7 +19,7 @@ function handleMenu() {
 
 function handleLinkMenu() {
   /* quando clicar em um item do menu, esconder o menu */
-  const links = document.querySelectorAll('nav .menu__list .menu__item a')
+  const links = document.querySelectorAll('nav .menuList .menuItem a')
   const nav = document.querySelector('#header nav')
 
   for (const link of links) {

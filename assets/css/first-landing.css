@@ -1,4 +1,4 @@
-#landing {
+.landing {
   margin-top: calc(0.5rem + (var(--header-height)));
 }
 .general {
