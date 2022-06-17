@@ -50,10 +50,10 @@ function createElementCard(indice) {
     </div>
   </div>
   <div class="cardContent">
-    <p class="cardContent--description">
+    <p class="cardContentDescription">
     ${currentElement.description}
     </p>
-    <p class="card__content--description card__content--stack">${currentElement.tec}</p>
+    <p class="cardContentStack">${currentElement.tec}</p>
   </div>
 </div>`
   return html

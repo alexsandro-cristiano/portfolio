@@ -3,7 +3,6 @@
 @import "./first-landing.css";
 @import "./sections.css";
 @import "./cards.css";
-@import "./projeto.css";
 * {
   margin: 0;
   padding: 0;
@@ -58,8 +57,8 @@ ul {
 
 @media (max-width: 768px) {
   .general {
-    height: 65vh;
-    padding: 0;
+    height: 70vh;
+    padding: 0.8rem;
   }
   #footer {
     font-size: var(--font-medium);
@@ -78,6 +77,26 @@ ul {
   }
   .text {
     font-size: var(--font-medium);
+  }
+
+  #footer {
+    font-size: var(--font-normal);
+  }
+}
+
+@media (max-width: 320px) {
+  .general {
+    height: 70vh;
+    padding: 1rem;
+  }
+  .general h2 {
+    font-size: var(--font-large);
+  }
+  .general h3 {
+    font-size: var(--font-medium);
+  }
+  .text {
+    font-size: var(--font-normal);
   }
 
   #footer {
