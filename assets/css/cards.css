@@ -159,10 +159,12 @@
 }
 
 /**/
-.containerCards {
+.containerCards,
+.containerCard {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5em;
+}
+.containerCards {
   margin-top: 2rem;
 }
 .skill {
@@ -185,4 +187,26 @@
   text-align: center;
   text-transform: uppercase;
   font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  #footer {
+    font-size: var(--font-medium);
+  }
+}
+@media (max-width: 425px) {
+  .containerCard {
+    align-items: center;
+  }
+  .skill {
+    gap: 0.2rem;
+    width: 7.5rem;
+    margin-left: 0.5rem;
+  }
+  #projects .text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
 }

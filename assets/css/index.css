@@ -57,13 +57,18 @@ ul {
 }
 
 @media (max-width: 768px) {
+  .general {
+    height: 65vh;
+    padding: 0;
+  }
   #footer {
     font-size: var(--font-medium);
   }
 }
 @media (max-width: 425px) {
   .general {
-    height: 65vh;
+    height: 70vh;
+    padding: 1rem;
   }
   .general h2 {
     font-size: 1.5rem;
