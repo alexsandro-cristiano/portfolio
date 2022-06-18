@@ -29,7 +29,6 @@
   text-transform: uppercase;
   font-weight: 600;
 }
-
 .card {
   color: var(--white);
   border: 1px solid var(--purple);
@@ -40,14 +39,12 @@
   );
   border-radius: 0.8rem;
 }
-
 .cardProject {
   width: 270px;
   height: 210px;
   padding: 1rem 2rem;
   box-shadow: 10px 5px 8px rgba(0, 0, 0, 0.8);
 }
-
 .cardTitle {
   line-height: 1.5rem;
   font-size: var(--font-ex-large);
@@ -86,41 +83,4 @@
 }
 .cardHeader .icon:hover {
   color: var(--primaryColor);
-}
-
-@media (max-width: 768px) {
-  .cardProject {
-    width: 220px;
-    height: 200px;
-    padding: 1rem 2rem;
-    box-shadow: 10px 5px 8px rgba(0, 0, 0, 0.8);
-  }
-
-  .cardContent {
-    font-size: var(--font-normal);
-    font-weight: 400;
-    position: relative;
-  }
-  .cardContentDescription {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-}
-@media (max-width: 425px) {
-  .containerCard {
-    align-items: center;
-  }
-  .skill {
-    gap: 0.2rem;
-    width: 7.5rem;
-    margin-left: 0.5rem;
-  }
-  #projects .text {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
 }
