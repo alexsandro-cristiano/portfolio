@@ -1,0 +1,26 @@
+@import './cards.css';
+@import './processbar.css';
+.section {
+  padding: 4rem 0;
+}
+.section-content {
+  padding: 1.5rem;
+}
+.textSmall {
+  font-size: var(--font-medium);
+  font-weight: 500;
+  color: var(--primaryColor);
+  margin-bottom: 0.5rem;
+}
+.section img {
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 2px 10px 5px rgba(0, 0, 0, 0.8);
+  width: 22vw;
+  height: 25vw;
+}
+.section .text {
+  margin-top: 0.9rem;
+  text-align: justify;
+  max-width: 600px;
+}

@@ -1,4 +1,4 @@
-@import "./nav.css";
+@import './nav.css';
 #header {
   height: var(--header-height);
   position: fixed;
@@ -7,8 +7,8 @@
   z-index: 100;
   width: 100%;
 }
-.header--active {
-  background: var(--bg-dark-200);
+.active {
+  background: var(--bgColorHeaderActive);
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
   transition: 0.1s ease-in-out;
 }

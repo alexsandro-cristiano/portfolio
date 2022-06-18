@@ -19,10 +19,10 @@
     />
     <link rel="stylesheet" href="./assets/css/index.css" />
   </head>
-  <body>
+  <body id='body' class="dark">
     <header id="header">
-      <nav class="nav show container flex">
-        <h1 class="logo"><span><</span>Alexsandro<span>/></span></h1>
+      <nav class="nav container flex">
+        <h1 class="logo"><span class="logoDestaque"><</span>Alexsandro<span class="logoDestaque">/></span></h1>
         <div class="menu">
           <ul class="menuList flex">
             <li class="menuItem"><a href="#home">Início</a></li>
@@ -38,10 +38,10 @@
         <div class="icon icon-close" id="i-close"></div>
       </nav>
     </header>
-    <section id="home" class="landing">
-      <div class="container general">
-        <h2>Alexsandro Cristiano G. da Silva</h2>
-        <h3>Desenvolvedor <span class="destaque">Fullstack</span></h3>
+    <section id="home">
+      <div class="container landing">
+        <h2 class="title" >Alexsandro Cristiano G. da Silva</h2>
+        <h3 id="landingSubtitle">Desenvolvedor <span class="destaque">Fullstack</span></h3>
         <p class="text">
           Sou um desenvolvedor com conhecimento em back-end e front-end. Estou
           finalizando a graduação em Analise e Desenvolvimento de Sistemas.
@@ -83,8 +83,8 @@
       <section id="about" class="section">
         <div class="container section-content flex">
           <div>
-            <h2 class="text-small">Um pouco sobre mim</h2>
-            <p class="section-title">sobre</p>
+            <h2 class="textSmall">Um pouco sobre mim</h2>
+            <p class="title">sobre</p>
             <p class="text">
               Meu interesse e primeiro contato com desenvolvimento web começou
               em 2011 com o Técnico de informatica que me ensinou muito sobre
@@ -109,8 +109,8 @@
       <section id="work" class="section">
         <section class="section">
           <div class="container stack section-content">
-            <h2 class="text-small">Minhas Experiências</h2>
-            <p class="section-title">Linguagens</p>
+            <h2 class="textSmall">Minhas Experiências</h2>
+            <p class="title">Linguagens</p>
             <p class="text">
               Principais Linguagens de programação e framework que conheço.
             </p>
@@ -121,8 +121,8 @@
 
       <section id="projects" class="section">
         <div class="container section-content">
-          <h2 class="text-small">Meus</h2>
-          <p class="section-title">Projetos</p>
+          <h2 class="textSmall">Meus</h2>
+          <p class="title">Projetos</p>
           <p class="text">
             Os projetos abaixo foram desenvolvidos sem fins lucrativos. Sendo o
             objetivo princial colocar em prática os conteúdos teoricos estudado
@@ -141,10 +141,10 @@
     <footer id="footer">
       <div class="container">&copy 2022 | Alexsandro Silva</div>
     </footer>
+    <script type="module" src="./assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   </body>
-  <script type="module" src="./assets/js/main.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script>
     $('.step').click(function () {
       $(this).addClass('active').prevAll().addClass('active')
@@ -177,3 +177,4 @@
     })
   </script>
 </html>
+

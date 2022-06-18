@@ -1,9 +1,9 @@
 function changeHeaderWhenScroll(header, navHeight) {
   navHeight -= 52
   if (window.scrollY >= navHeight) {
-    header.classList.add('header--active')
+    header.classList.add('active')
   } else {
-    header.classList.remove('header--active')
+    header.classList.remove('active')
   }
 }
 

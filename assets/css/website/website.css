@@ -1,0 +1,57 @@
+@import './header.css';
+@import './firstLanding.css';
+@import './sections.css';
+@import './footer.css';
+.container {
+  max-width: 980px;
+  width: 90%;
+  margin: auto;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.destaque {
+  color: var(--primaryColor);
+}
+.icon {
+  font-size: 1.5rem;
+  color: var(--primaryColor);
+}
+.dark {
+  background: var(--bodyBackgroundColorDark);
+  color: var(--white);
+}
+.dark .section {
+  background: var(--gray-500);
+}
+.light {
+  background: var(--bodyBackgroundColorLight);
+  color: var(--gray-700);
+}
+.light .section {
+  background: var(--gray-100);
+}
+
+.title {
+  margin-bottom: 1rem;
+  font-size: var(--font-website-title);
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.subtitle {
+  font-size: 1.5rem;
+  color: var(--gray-200);
+  font-weight: 600;
+  margin: 1rem 0 1.5rem;
+}
+
+.text {
+  font-size: var(--font-large);
+  color: var(--gray-200);
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02rem;
+  max-width: 600px;
+}

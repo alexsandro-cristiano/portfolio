@@ -1,28 +1,15 @@
-.landing {
+#home {
   margin-top: calc(0.5rem + (var(--header-height)));
 }
-.general {
-  padding: 5rem;
+.landing {
+  padding: 4rem;
   height: 80vh;
 }
-.general h2 {
-  font-size: 2.5rem;
-  color: var(--gray-100);
-  font-weight: 700;
-}
-.general h3 {
+#landingSubtitle {
   font-size: 1.5rem;
   color: var(--gray-200);
   font-weight: 600;
   margin: 1rem 0 1.5rem;
-}
-.text {
-  font-size: var(--font-large);
-  color: var(--gray-200);
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.02rem;
-  max-width: 600px;
 }
 .socialMidia {
   display: flex;
@@ -39,11 +26,9 @@
   border-top-right-radius: 100%;
   height: 6vh;
 }
-
 .divisor > a > .icon-arrow-down {
   text-align: center;
   display: block;
   cursor: pointer;
   font-size: 2rem;
-  color: var(--yellow);
 }
