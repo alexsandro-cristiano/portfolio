@@ -1,0 +1,17 @@
+.section-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.section-content > div {
+  order: 2;
+}
+.section img {
+  order: 1;
+  object-fit: cover;
+  border-radius: 10%;
+  box-shadow: 2px 10px 5px rgba(0, 0, 0, 0.8);
+  width: 30vw;
+  height: 45vw;
+  margin-bottom: 2rem;
+}
