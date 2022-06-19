@@ -13,10 +13,10 @@
   margin-bottom: 0.5rem;
 }
 .section img {
-  border-radius: 50%;
   object-fit: cover;
+  border-radius: 5%;
   box-shadow: 2px 10px 5px rgba(0, 0, 0, 0.8);
-  width: 22vw;
+  width: 20vw;
   height: 25vw;
 }
 .section .text {
