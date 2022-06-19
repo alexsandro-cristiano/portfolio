@@ -63,6 +63,10 @@
     height: 45vw;
     margin-bottom: 2rem;
   }
+  .section .text {
+    margin-top: 0.9rem;
+    text-align: justify;
+  }
   .icon {
     display: block;
     font-size: var(--font-ex-large);
