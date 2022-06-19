@@ -27,11 +27,11 @@ nav.show .menu .menuList {
   padding: 1.2rem;
 }
 nav .menuItem a:hover {
-  outline: 1px dashed var(--blue);
+  outline: 1px dashed var(--quartaColor);
 }
 nav .icon:hover {
   transition: 0.3s;
-  color: var(--blue);
+  color: var(--quartaColor);
 }
 nav .icon-close {
   visibility: hidden;

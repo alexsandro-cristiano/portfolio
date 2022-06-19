@@ -2,6 +2,7 @@
 @import './firstLanding.css';
 @import './sections.css';
 @import './footer.css';
+@import './lightMode.css';
 .container {
   max-width: 980px;
   width: 90%;
@@ -26,14 +27,6 @@
 .dark .section {
   background: var(--gray-500);
 }
-.light {
-  background: var(--bodyBackgroundColorLight);
-  color: var(--gray-700);
-}
-.light .section {
-  background: var(--gray-100);
-}
-
 .title {
   margin-bottom: 1rem;
   font-size: var(--font-website-title);

@@ -7,7 +7,7 @@
   font-weight: 600;
   color: var(--gray-100);
 }
-.nav .logo span {
+.logoDestaque {
   font-weight: 700;
   color: var(--primaryColor);
 }

@@ -26,11 +26,13 @@
   --gray-700: #0d0d0d;
 
   --bodyBackgroundColorDark: #292c35;
-  --bodyBackgroundColorLight: #f1f1f1;
-  --bgColorHeaderActive: #3a3d47;
-  --primaryColor: #fdf36a;
+  --bodyBackgroundColorLight: #F1F1F1;
+  --bgColorHeaderActive: #d8dbe2;/* dark = #3a3d47;*/
+  --primaryColor: #e06c00;
   --secundaryColor: #cec75e;
   --tertiaryColor: #8284fa;
+  --tertiaryColorDark: #5e60ce;
+  --quartaColor: #4ea8de;
 }
 * {
   margin: 0;
