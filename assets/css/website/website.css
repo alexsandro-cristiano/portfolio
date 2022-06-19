@@ -55,3 +55,11 @@
   letter-spacing: 0.02rem;
   max-width: 600px;
 }
+.btn {
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: var(--font-medium);
+  font-weight: 500;
+  border: 1px solid var(--tertiaryColor);
+  color: var(--primaryColor);
+}
