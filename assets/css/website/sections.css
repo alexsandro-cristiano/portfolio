@@ -1,5 +1,5 @@
-@import './cards.css';
-@import './processbar.css';
+@import "./cards.css";
+@import "./processbar.css";
 .section {
   padding: 4rem 0;
 }
@@ -15,6 +15,7 @@
 .section img {
   object-fit: cover;
   border-radius: 5%;
+  margin-left: 2rem;
   width: 20vw;
   height: 25vw;
 }

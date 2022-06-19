@@ -5,6 +5,9 @@
   padding: 4rem;
   height: 80vh;
 }
+.landing .text {
+  max-width: 590px;
+}
 #landingSubtitle {
   font-size: 1.5rem;
   color: var(--gray-200);

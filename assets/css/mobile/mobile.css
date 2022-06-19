@@ -57,8 +57,6 @@
   }
   .section img {
     order: 1;
-    object-fit: cover;
-    border-radius: 10%;
     width: 30vw;
     height: 45vw;
     margin-bottom: 2rem;
@@ -66,6 +64,7 @@
   .section .text {
     margin-top: 0.9rem;
     text-align: justify;
+    max-width: 600px;
   }
   .icon {
     display: block;

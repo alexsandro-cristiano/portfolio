@@ -2,20 +2,23 @@
   background: var(--bodyBackgroundColorLight);
   color: var(--gray-700);
 }
-.light .section, .light .divisor {
+.light .section,
+.light .divisor {
   background: var(--gray-200);
 }
 /*Nav*/
-.light .nav .logo ,.light .nav .menuList a {
+.light .nav .logo,
+.light .nav .menuList a {
   color: var(--gray-500);
 }
 .light .nav .menuList a:hover {
   color: var(--primaryColor);
 }
-#landingSubtitle {
+.light #landingSubtitle {
   color: var(--gray-300);
 }
-.light .subtitle, .light .text {
+.light .subtitle,
+.light .text {
   color: var(--gray-700);
 }
 .light .btn {
@@ -28,20 +31,18 @@
 }
 /*Footer*/
 .light #footer {
-  color:  var(--gray-700);
+  color: var(--gray-700);
   background: var(--gray-200);
 }
 
-
-
 /* ========== LAYOUT PARA BOTAO LIGHT ==========*/
-.toggle{
+.toggle {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-input[type='checkbox'] {
+input[type="checkbox"] {
   height: 0;
   width: 0;
   visibility: hidden;
@@ -59,7 +60,7 @@ label {
 }
 
 label::after {
-  content: '';
+  content: "";
   position: absolute;
   top: -6px;
   left: 0;
@@ -75,6 +76,6 @@ input:checked + label {
 }
 
 input:checked + label::after {
-  left:100%;
+  left: 100%;
   transform: translateX(-100%);
 }
