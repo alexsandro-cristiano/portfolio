@@ -1,8 +1,9 @@
-@import './header.css';
-@import './firstLanding.css';
-@import './sections.css';
-@import './footer.css';
-@import './lightMode.css';
+@import "./header.css";
+@import "./firstLanding.css";
+@import "./sections.css";
+@import "./footer.css";
+@import "./lightMode.css";
+@import "./arrowUp.css";
 .container {
   max-width: 980px;
   width: 90%;
@@ -59,12 +60,12 @@
   color: var(--primaryColor);
   border-radius: 8px;
 }
-.btn:hover{
+.btn:hover {
   background: rgba(252, 250, 250, 0.581);
 }
-.btnContact{
+.btnContact {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: .8rem;
+  gap: 0.8rem;
 }

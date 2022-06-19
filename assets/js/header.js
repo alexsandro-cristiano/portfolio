@@ -28,6 +28,14 @@ function handleLinkMenu() {
     })
   }
 }
+function backToTop() {
+  const backToTopButton = document.querySelector('.back-up')
+  if (window.scrollY >= 630) {
+    backToTopButton.classList.add('show')
+  } else {
+    backToTopButton.classList.remove('show')
+  }
+}
 
 export function init() {
   handleMenu()
@@ -36,5 +44,6 @@ export function init() {
   const navHeight = header.offsetHeight
   window.addEventListener('scroll', function () {
     changeHeaderWhenScroll(header, navHeight)
+    backToTop()
   })
 }

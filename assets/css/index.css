@@ -1,5 +1,5 @@
-@import './website/website.css';
-@import './mobile/mobile.css';
+@import "./website/website.css";
+@import "./mobile/mobile.css";
 
 :root {
   --header-height: 4.5rem;
@@ -13,9 +13,6 @@
   --font-website-subtitle: 1.5rem;
 
   --white: #ffff;
-
-  --blue: #4ea8de;
-  --purple: #8284fa;
   --purple-dark: #5e60ce;
   --gray-100: #f2f2f2;
   --gray-200: #d9d9d9;
@@ -26,8 +23,8 @@
   --gray-700: #0d0d0d;
 
   --bodyBackgroundColorDark: #292c35;
-  --bodyBackgroundColorLight: #F1F1F1;
-  --bgColorHeaderActive:#3a3d47;
+  --bodyBackgroundColorLight: #f1f1f1;
+  --bgColorHeaderActive: #3a3d47;
   --primaryColor: #fdf36a;
   --secundaryColor: #cec75e;
   --tertiaryColor: #8284fa;
@@ -43,7 +40,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 62.5%;
 }
 a {
