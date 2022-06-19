@@ -22,6 +22,7 @@ function createCard(indice) {
   const line = document.createElement('p')
 
   div.classList.add('skill')
+  div.classList.add('boxShadow')
   icon.classList.add('icon-badge')
   icon.classList.add('icon')
 

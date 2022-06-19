@@ -15,7 +15,6 @@
 .section img {
   object-fit: cover;
   border-radius: 5%;
-  box-shadow: 2px 10px 5px rgba(0, 0, 0, 0.8);
   width: 20vw;
   height: 25vw;
 }

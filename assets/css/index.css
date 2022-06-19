@@ -27,8 +27,8 @@
 
   --bodyBackgroundColorDark: #292c35;
   --bodyBackgroundColorLight: #F1F1F1;
-  --bgColorHeaderActive: #d8dbe2;/* dark = #3a3d47;*/
-  --primaryColor: #e06c00;
+  --bgColorHeaderActive:#3a3d47;
+  --primaryColor: #fdf36a;
   --secundaryColor: #cec75e;
   --tertiaryColor: #8284fa;
   --tertiaryColorDark: #5e60ce;
