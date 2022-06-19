@@ -30,6 +30,7 @@
   --tertiaryColor: #8284fa;
   --tertiaryColorDark: #5e60ce;
   --quartaColor: #4ea8de;
+  --bgColorBtn: #4ea7dea1;
 }
 * {
   margin: 0;
@@ -48,4 +49,11 @@ a {
 }
 ul {
   list-style: none;
+}
+button {
+  background: none;
+  border: none;
+}
+button:hover {
+  background: none;
 }
