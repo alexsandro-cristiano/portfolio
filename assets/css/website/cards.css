@@ -13,11 +13,7 @@
   height: 3rem;
   border-radius: 0.4rem;
   border: 2px solid var(--tertiaryColor);
-  background: linear-gradient(
-    to bottom right,
-    var(--tertiaryColorDark) 0%,
-    var(--quartaColor) 100%
-  );
+  background: linear-gradient(to bottom right, var(--tertiaryColorDark) 0%, var(--quartaColor) 100%);
 }
 .skill .icon {
   margin-left: 0.6rem;
@@ -31,17 +27,14 @@
 .card {
   color: var(--white);
   border: 1px solid var(--tertiaryColor);
-  background: linear-gradient(
-    to bottom right,
-    var(--tertiaryColorDark) 0%,
-    var(--quartaColor) 100%
-  );
+  background: linear-gradient(to bottom right, var(--tertiaryColorDark) 0%, var(--quartaColor) 100%);
   border-radius: 0.8rem;
 }
 .cardProject {
   width: 270px;
   height: 210px;
   padding: 1rem 2rem;
+  position: relative;
 }
 .cardTitle {
   line-height: 1.5rem;
@@ -49,7 +42,7 @@
 }
 
 .cardContent {
-  font-size: var(--font-large);
+  font-size: var(--font-medium);
   font-weight: 400;
   position: relative;
 }
@@ -60,8 +53,8 @@
 .cardContentStack {
   text-transform: uppercase;
   font-weight: 500;
+  font-size: var(--font-normal);
 }
-
 .cardHeader {
   display: flex;
   align-items: center;
@@ -74,11 +67,14 @@
   justify-content: center;
   gap: 0.5rem;
 }
-
 .cardHeader .icon {
   color: var(--white);
   transition: 0.3s;
 }
 .cardHeader .icon:hover {
   color: var(--primaryColor);
+}
+.cardFooter {
+  position: absolute;
+  bottom: 0.3rem;
 }

@@ -38,21 +38,31 @@ const projectsData = [
 
 function createElementCard(indice) {
   const currentElement = projectsData[indice]
-  const html = ` <div class="card cardProject boxShadow">
+  const html = ` <div class="card cardProject">
   <div class="cardHeader">
     <h2 class="cardTitle">${currentElement.name}</h2>
     <div class="cardIcon-link">
-      <a  class="cardLink" target='__black' href="${currentElement.linkGithub}"><i class="icon icon-github">
-      </i></a>
-      
-      <a class="cardLink" target='__black' href="${currentElement.linkWeb}"><i class="icon icon-external-link"></i>
+      <a
+        class="cardLink"
+        target="__black"
+        href="${currentElement.linkGithub}"
+        ><i class="icon icon-github"> </i
+      ></a>
+
+      <a
+        class="cardLink"
+        target="__black"
+        href="${currentElement.linkWeb}"
+        ><i class="icon icon-external-link"></i>
       </a>
     </div>
   </div>
   <div class="cardContent">
     <p class="cardContentDescription">
-    ${currentElement.description}
+      ${currentElement.description}
     </p>
+  </div>
+  <div class="cardFooter">
     <p class="cardContentStack">${currentElement.tec}</p>
   </div>
 </div>`

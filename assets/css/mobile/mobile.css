@@ -70,11 +70,6 @@
     display: block;
     font-size: var(--font-ex-large);
   }
-  .cardProject {
-    width: 220px;
-    height: 200px;
-    padding: 1rem 2rem;
-  }
   .cardContent {
     font-size: var(--font-normal);
     font-weight: 400;
