@@ -145,6 +145,11 @@
     font-size: var(--font-medium);
   }
 
+  .cardProject {
+    width: 240px;
+    height: 190px;
+    padding: 1rem 2rem;
+  }
   .back-up {
     font-size: 0.7rem;
     right: 0.45rem;
