@@ -3,14 +3,15 @@ const projectsData = [
     id: 0,
     name: 'Game Unravel Number',
     tec: 'c',
-    description: 'Jogo utilizando a linguagem C.',
+    description:
+      'Jogo da Adivinhação é aplicação utilizando a linguagem C. Este projeto não está disponivel na web, somente no github.',
     linkGithub: 'https://github.com/alexsandro-cristiano/game-unravel-number',
     linkWeb: ''
   },
   {
     id: 1,
     name: 'RockSité',
-    tec: 'html, css, js',
+    tec: 'html - css - js',
     description:
       'Site desenvolvido no 2° periodo da graduação.Utilizado como tema base estilo musical rock n roll.',
     linkGithub: 'https://github.com/alexsandro-cristiano/rocksite',
@@ -19,7 +20,7 @@ const projectsData = [
   {
     id: 2,
     name: 'Cartão de Visita',
-    tec: 'html, css, js',
+    tec: 'html - css - js',
     description:
       'Página desenvolvida com a inspiração do layout da NLW Heart. Objetivo de ser meu cartão de visita',
     linkGithub: 'https://github.com/alexsandro-cristiano/cartao-de-visita',
@@ -27,8 +28,17 @@ const projectsData = [
   },
   {
     id: 3,
+    name: 'Dev-Magico',
+    tec: 'html - css - js',
+    description:
+      'Aplicação front-end que consome 2 APIs distintas sobre o universo do Harry Potter.',
+    linkGithub: 'https://github.com/alexsandro-cristiano/dev-magico',
+    linkWeb: 'https://dmfront.netlify.app/'
+  },
+  {
+    id: 4,
     name: 'AC Movie',
-    tec: 'react, java',
+    tec: 'react - java',
     description:
       'Catálogo de filmes para ser avaliado, a página foi desenvolvida durante a semana Spring React da DevSuperior.',
     linkGithub: 'https://github.com/alexsandro-cristiano/acmovie',
