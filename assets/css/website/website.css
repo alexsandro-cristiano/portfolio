@@ -41,6 +41,10 @@
   margin: 1rem 0 1.5rem;
 }
 
+.dark .nav .menuList a.active,
+.light .nav .menuList a.active {
+  color: var(--primaryColor);
+}
 .text {
   font-size: var(--font-large);
   color: var(--gray-200);

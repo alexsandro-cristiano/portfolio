@@ -1,9 +1,9 @@
 function changeHeaderWhenScroll(header, navHeight) {
   navHeight -= 52
   if (window.scrollY >= navHeight) {
-    header.classList.add('active')
+    header.classList.add('activeHeader')
   } else {
-    header.classList.remove('active')
+    header.classList.remove('activeHeader')
   }
 }
 
@@ -18,7 +18,6 @@ function handleMenu() {
 }
 
 function handleLinkMenu() {
-  /* quando clicar em um item do menu, esconder o menu */
   const links = document.querySelectorAll('nav .menuList .menuItem a')
   const nav = document.querySelector('#header nav')
 
@@ -28,6 +27,7 @@ function handleLinkMenu() {
     })
   }
 }
+
 function backToTop() {
   const backToTopButton = document.querySelector('.back-up')
   if (window.scrollY >= 630) {
@@ -37,13 +37,39 @@ function backToTop() {
   }
 }
 
+/* Menu ativo conforme a seção visível na página */
+const sections = document.querySelectorAll('section[id]')
+function activateMenuAtCurrentSection() {
+  const checkpoint = window.pageYOffset + (window.innerHeight / 8) * 4
+
+  for (const section of sections) {
+    const sectionTop = section.offsetTop
+    const sectionHeight = section.offsetHeight
+    const sectionId = section.getAttribute('id')
+
+    const checkpointStart = checkpoint >= sectionTop
+    const checkpointEnd = checkpoint <= sectionTop + sectionHeight
+
+    if (checkpointStart && checkpointEnd) {
+      document
+        .querySelector('nav ul li a[href*=' + sectionId + ']')
+        .classList.add('active')
+    } else {
+      document
+        .querySelector('nav ul li a[href*=' + sectionId + ']')
+        .classList.remove('active')
+    }
+  }
+}
+
 export function init() {
-  handleMenu()
-  handleLinkMenu()
   const header = document.querySelector('#header')
   const navHeight = header.offsetHeight
+  handleMenu()
+  handleLinkMenu()
   window.addEventListener('scroll', function () {
     changeHeaderWhenScroll(header, navHeight)
     backToTop()
+    activateMenuAtCurrentSection()
   })
 }
