@@ -1,54 +1,52 @@
 .containerCard {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
   margin-top: 2rem;
   gap: 2rem;
+  color: var(--white);
+}
+.bgCard {
+  border: 2px solid var(--tertiaryColor);
+  background: linear-gradient(to bottom right, var(--tertiaryColorDark) 0%, var(--quartaColor) 100%);
+  border-radius: 0.4rem;
 }
 .skill {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  flex-grow: 1;
   gap: 0 1rem;
   width: 10rem;
   height: 3rem;
-  border-radius: 0.4rem;
-  border: 2px solid var(--tertiaryColor);
-  background: linear-gradient(to bottom right, var(--tertiaryColorDark) 0%, var(--quartaColor) 100%);
 }
 .skill .icon {
   margin-left: 0.6rem;
 }
 .skill p {
-  color: var(--white);
   text-align: center;
   text-transform: uppercase;
   font-weight: 600;
 }
-.card {
-  color: var(--white);
-  border: 1px solid var(--tertiaryColor);
-  background: linear-gradient(to bottom right, var(--tertiaryColorDark) 0%, var(--quartaColor) 100%);
-  border-radius: 0.8rem;
-}
 .cardProject {
   width: 270px;
-  height: 210px;
   padding: 1rem 2rem;
+  flex-grow: 1;
   position: relative;
 }
 .cardTitle {
   line-height: 1.5rem;
   font-size: var(--font-ex-large);
 }
-
 .cardContent {
   font-size: var(--font-medium);
   font-weight: 400;
+  text-align: justify;
   position: relative;
 }
 .cardContentDescription {
   margin: 1rem 0;
-  line-height: 1.3rem;
+  line-height: 1.5rem;
 }
 .cardContentStack {
   text-transform: uppercase;

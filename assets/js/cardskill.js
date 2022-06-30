@@ -3,7 +3,7 @@ const skills = [
   'css',
   'javascript',
   'react',
-  'bootstrap',
+  'sass',
   'java',
   'spring boot',
   'nodejs',
@@ -22,6 +22,7 @@ function createCard(indice) {
   const line = document.createElement('p')
 
   div.classList.add('skill')
+  div.classList.add('bgCard')
   div.classList.add('boxShadow')
   icon.classList.add('icon-badge')
   icon.classList.add('icon')
