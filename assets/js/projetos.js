@@ -47,25 +47,8 @@ const projectsData = [
     linkWeb: ''
   }
 ]
-
-let qtdCard = 3
-let i
+let renderQuantityCards = 3
 const btnShowMore = document.querySelector('.jsCardBtn')
-const divContainerCard = document.querySelector('.js-cardProject')
-function showCard() {
-  if (qtdCard == 3) {
-    for (i = 0; i < qtdCard; i++) {
-      renderProjectCard(i)
-    }
-    qtdCard += 3
-  } else {
-    divContainerCard.innerHTML = ''
-    for (i = 0; i < qtdCard; i++) {
-      renderProjectCard(i)
-    }
-    qtdCard += 3
-  }
-}
 
 function createElementCard(indice) {
   const currentElement = projectsData[indice]
@@ -126,15 +109,31 @@ function createElementCard(indice) {
   card.appendChild(cardFooter)
   return card
 }
-
-function renderProjectCard(indice) {
-  divContainerCard.appendChild(createElementCard(indice))
+function renderCardProject() {
+  const divContainerCard = document.querySelector('.js-cardProject')
+  if (renderQuantityCards == 3) {
+    for (let i = 0; i < renderQuantityCards; i++) {
+      divContainerCard.appendChild(createElementCard(i))
+    }
+    renderQuantityCards += 3
+  } else {
+    divContainerCard.innerHTML = ''
+    for (let i = 0; i < renderQuantityCards; i++) {
+      divContainerCard.appendChild(createElementCard(i))
+    }
+    renderQuantityCards += 3
+    removeButton()
+  }
 }
-
+function removeButton() {
+  if (renderQuantityCards > projectsData.length) {
+    btnShowMore.style.visibility = 'hidden'
+  }
+}
 export function init() {
-  showCard()
+  renderCardProject()
   btnShowMore.addEventListener('click', event => {
     event.preventDefault()
-    showCard()
+    renderCardProject()
   })
 }
