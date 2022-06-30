@@ -40,13 +40,32 @@ const projectsData = [
     linkWeb: 'https://acmovie.netlify.app/'
   },
   {
-    name: 'Em Construção',
+    name: 'Em Breve',
     tec: '',
-    description: 'Projeto a ser definido',
+    description: 'Em breve novo projeto',
     linkGithub: '',
     linkWeb: ''
   }
 ]
+
+let qtdCard = 3
+let i
+const btnShowMore = document.querySelector('.jsCardBtn')
+const divContainerCard = document.querySelector('.js-cardProject')
+function showCard() {
+  if (qtdCard == 3) {
+    for (i = 0; i < qtdCard; i++) {
+      renderProjectCard(i)
+    }
+    qtdCard += 3
+  } else {
+    divContainerCard.innerHTML = ''
+    for (i = 0; i < qtdCard; i++) {
+      renderProjectCard(i)
+    }
+    qtdCard += 3
+  }
+}
 
 function createElementCard(indice) {
   const currentElement = projectsData[indice]
@@ -109,13 +128,13 @@ function createElementCard(indice) {
 }
 
 function renderProjectCard(indice) {
-  const divContainerCard = document.querySelector('.js-cardProject')
   divContainerCard.appendChild(createElementCard(indice))
 }
 
 export function init() {
-  let i
-  for (i = 0; i < projectsData.length; i++) {
-    renderProjectCard(i)
-  }
+  showCard()
+  btnShowMore.addEventListener('click', event => {
+    event.preventDefault()
+    showCard()
+  })
 }
