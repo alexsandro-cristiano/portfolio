@@ -29,7 +29,7 @@ const projectsData = [
     description:
       'Jogo da Adivinhação é aplicação utilizando a linguagem C. Este projeto não está disponivel na web, somente no github.',
     linkGithub: 'https://github.com/alexsandro-cristiano/game-unravel-number',
-    linkWeb: ''
+    linkWeb: 'https://drive.google.com/file/d/1VRWYtbUscLdO8c8eJlO7lj5r93zF08tl/view?usp=sharing'
   },
   {
     name: 'AC Movie',
