@@ -1,9 +1,18 @@
 const projectsData = [
   {
+    name: 'Jogo da Adivinhação',
+    tec: 'C',
+    description:
+      'Aplicação que simula um jogo de adivinhação numérica com diferentes níveis de dificuldade. Jogo está disponível para ambiente windows',
+    linkGithub: 'https://github.com/alexsandro-cristiano/game-unravel-number',
+    linkWeb:
+      'https://drive.google.com/file/d/1VRWYtbUscLdO8c8eJlO7lj5r93zF08tl/view?usp=sharing'
+  },
+  {
     name: 'RockSité',
     tec: 'html - css - js',
     description:
-      'Site desenvolvido no 2° periodo da graduação. Utilizado como tema base estilo musical rock n roll.',
+      'Single page sobre o estilo musical rock n roll. Inicialmente desenvolvido no 2° periodo da graduação e atualizado conforme o aprendizado de front-end.',
     linkGithub: 'https://github.com/alexsandro-cristiano/rocksite',
     linkWeb: 'https://rocksite.netlify.app/'
   },
@@ -11,8 +20,8 @@ const projectsData = [
     name: 'Dev-Magico',
     tec: 'html - css - js',
     description:
-      'Aplicação front-end para consumir uma API sobre o universo do Harry Potter. Credito da API para: fedeperin',
-    linkWeb: 'https://dmfront.netlify.app/',
+      'DM é uma aplicação front-end que consome API pública sobre o universo de Harry Potter. Crédito da API para: fedeperin. Link da API: https://fedeperin-harry-potter-api.herokuapp.com/',
+    linkWeb: 'https://devmagico.netlify.app',
     linkGithub: 'https://github.com/alexsandro-cristiano/dev-magico'
   },
   {
@@ -24,20 +33,12 @@ const projectsData = [
     linkWeb: 'https://cartaovisita.netlify.app/'
   },
   {
-    name: 'Game Unravel Number',
-    tec: 'c',
+    name: 'League of Heros',
+    tec: 'typscript - scss - html',
     description:
-      'Jogo da Adivinhação é aplicação utilizando a linguagem C. Este projeto não está disponivel na web, somente no github.',
-    linkGithub: 'https://github.com/alexsandro-cristiano/game-unravel-number',
-    linkWeb: 'https://drive.google.com/file/d/1VRWYtbUscLdO8c8eJlO7lj5r93zF08tl/view?usp=sharing'
-  },
-  {
-    name: 'AC Movie',
-    tec: 'react - java',
-    description:
-      'Catálogo de filmes para ser avaliado, a página foi desenvolvida durante a semana Spring React da DevSuperior.',
-    linkGithub: 'https://github.com/alexsandro-cristiano/acmovie',
-    linkWeb: 'https://acmovie.netlify.app/'
+      'Single Page para você adicionar os heróis disponíveis e montar a maior liga de todas. O intuito do projeto é compreender os eventos de um carrinho de compras de forma descontraída.',
+    linkGithub: 'https://github.com/alexsandro-cristiano/league-of-heros',
+    linkWeb: ''
   },
   {
     name: 'Em Breve',
