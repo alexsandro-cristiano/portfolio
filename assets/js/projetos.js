@@ -1,12 +1,11 @@
 const projectsData = [
   {
-    name: 'Jogo da Adivinhação',
-    tec: 'C',
+    name: 'League of Heros',
+    tec: 'typscript - scss - html',
     description:
-      'Aplicação que simula um jogo de adivinhação numérica com diferentes níveis de dificuldade. Jogo está disponível para ambiente windows',
-    linkGithub: 'https://github.com/alexsandro-cristiano/game-unravel-number',
-    linkWeb:
-      'https://drive.google.com/file/d/1VRWYtbUscLdO8c8eJlO7lj5r93zF08tl/view?usp=sharing'
+      'Single Page para você adicionar os heróis disponíveis e montar a maior liga de todas. O intuito do projeto é compreender como utilizar a react-router-dom de forma descontraída.',
+    linkGithub: 'https://github.com/alexsandro-cristiano/league-of-heros',
+    linkWeb: ''
   },
   {
     name: 'RockSité',
@@ -15,6 +14,14 @@ const projectsData = [
       'Single page sobre o estilo musical rock n roll. Inicialmente desenvolvido no 2° periodo da graduação e atualizado conforme o aprendizado de front-end.',
     linkGithub: 'https://github.com/alexsandro-cristiano/rocksite',
     linkWeb: 'https://rocksite.netlify.app/'
+  },
+  {
+    name: 'PitStop',
+    tec: 'html - css',
+    description:
+      'Pagina web para ser o pit stop entre as principais paginas e redes sociais.',
+    linkGithub: 'https://github.com/alexsandro-cristiano/pitstop',
+    linkWeb: 'https://pitstopdev.netlify.app/'
   },
   {
     name: 'Dev-Magico',
@@ -30,15 +37,16 @@ const projectsData = [
     description:
       'Página desenvolvida com a inspiração do layout da NLW Heart. Objetivo de ser meu cartão de visita',
     linkGithub: 'https://github.com/alexsandro-cristiano/cartao-de-visita',
-    linkWeb: 'https://cartaovisita.netlify.app/'
+    linkWeb:''
   },
   {
-    name: 'League of Heros',
-    tec: 'typscript - scss - html',
+    name: 'Jogo da Adivinhação',
+    tec: 'C',
     description:
-      'Single Page para você adicionar os heróis disponíveis e montar a maior liga de todas. O intuito do projeto é compreender os eventos de um carrinho de compras de forma descontraída.',
-    linkGithub: 'https://github.com/alexsandro-cristiano/league-of-heros',
-    linkWeb: ''
+      'Aplicação que simula um jogo de adivinhação numérica com diferentes níveis de dificuldade. Jogo está disponível para ambiente windows',
+    linkGithub: 'https://github.com/alexsandro-cristiano/game-unravel-number',
+    linkWeb:
+      'https://drive.google.com/file/d/1VRWYtbUscLdO8c8eJlO7lj5r93zF08tl/view?usp=sharing'
   },
   {
     name: 'Em Breve',
