@@ -5,7 +5,7 @@ const projectsData = [
     description:
       'Single Page para você adicionar os heróis disponíveis e montar a maior liga de todas. O intuito do projeto é compreender como utilizar a react-router-dom de forma descontraída.',
     linkGithub: 'https://github.com/alexsandro-cristiano/league-of-heros',
-    linkWeb: ''
+    linkWeb: 'https://leagueofheros.vercel.app/'
   },
   {
     name: 'RockSité',
