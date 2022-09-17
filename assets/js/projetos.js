@@ -8,6 +8,14 @@ const projectsData = [
     linkWeb: 'https://leagueofheros.vercel.app/'
   },
   {
+    name: 'News Worlds',
+    tec: 'typscript - styled-component- html',
+    description:
+      'Single Page para verificar notifica do mundo todo. O objetivo principal é colocar em pratica os conhecimentos sobre consumo de api no react com axios.',
+    linkGithub: 'https://github.com/alexsandro-cristiano/newsworlds',
+    linkWeb: 'https://newsworlds.vercel.app/'
+  },
+  {
     name: 'RockSité',
     tec: 'html - css - js',
     description:
@@ -37,7 +45,7 @@ const projectsData = [
     description:
       'Página desenvolvida com a inspiração do layout da NLW Heart. Objetivo de ser meu cartão de visita',
     linkGithub: 'https://github.com/alexsandro-cristiano/cartao-de-visita',
-    linkWeb:''
+    linkWeb: ''
   },
   {
     name: 'Jogo da Adivinhação',
