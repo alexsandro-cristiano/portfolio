@@ -42,7 +42,7 @@ ul {
   padding: 2.4rem;
   overflow-y: auto;
   height: calc(100vh - 7rem);
-  margin-bottom: 60px;
+  padding-bottom: 6rem;
 }
 .text {
   font-size: 1.4rem;
