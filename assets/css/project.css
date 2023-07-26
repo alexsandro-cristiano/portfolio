@@ -1,0 +1,18 @@
+#em-construcao.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray);
+}
+
+#em-construcao.container h1 {
+  font-size: 1.6rem;
+  margin-top: 1.6rem;
+  text-align: center;
+}
+
+#em-construcao.container small {
+  text-align: center;
+  margin-top: .8rem;
+  font-size: 1.2rem;
+}
