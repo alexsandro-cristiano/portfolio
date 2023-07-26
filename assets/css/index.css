@@ -206,6 +206,12 @@ header {
   width: 6rem;
 }
 
+.paragraph{
+  font-size: 1.6rem;
+  line-height: 1.4;
+  text-align: justify;
+  color: #d3d3d3;
+}
 @media screen and (min-width: 1024px) {
   .avatar {
     height: 20rem;

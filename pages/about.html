@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/css/index.css" />
     <link rel="stylesheet" href="../assets/fonts/style.css" />
+    <link rel="stylesheet" href="../assets/css/index.css" />
     <link
       rel="shortcut icon"
-      href="./assets/favicon/favicon-32x32.png"
+      href="../assets/favicon/favicon-32x32.png"
       type="image/x-icon"
     />
-    <title>Alexsandro Silva</title>
+    <title>Alexsandro Silva | Sobre Mim</title>
   </head>
   <body>
     <header>
@@ -30,97 +30,89 @@
       </nav>
     </header>
 
-    <section id="profile" class="container">
-      <div class="wrapper__img-profile">
-        <div class="avatar">
-          <img
-            src="https://avatars.githubusercontent.com/u/75186371?v=4"
-            alt="Alexsandro Silva foto de perfil"
-          />
-        </div>
+    <main class="container">
+      <ul class="tabs">
+        <li class="tab active">
+          <i class="icon-user icon"></i>
+          sobre mim
+        </li>
+        <li class="tab">
+          <i class="icon-coffee icon"></i>
+          experiências
+        </li>
+        <li class="tab">
+          <i class="icon-badge icon"></i>
+          Acadêmico
+        </li>
+        <li class="tab">
+          <i class="icon-hard-drive icon"></i>
+          Habilidades
+        </li>
+        <div class="line"></div>
+      </ul>
+      <div class="content-box">
+        <section class="content active">
+          <article>
+            <h2>Quem é Alexsandro.</h2>
+            <p class="paragraph">
+              Sou natural do Rio de Janeiro e filho mais velho da Claudia e
+              Alexandre. Ao longo dos anos, desenvolvi uma grande afinidade com
+              a área de tecnologia e computação. Essa paixão me levou a buscar
+              uma carreira na área de TI, onde pude aprimorar minhas habilidades
+              e trabalhar em diversos projetos.
+            </p>
+            <p class="paragraph">
+              Além do meu interesse por tecnologia, gosto da area de ciências
+              humanas e sou um entusiasta do mundo das artes. Adoro música,
+              teatro e filmes.
+            </p>
+          </article>
+          <article>
+            <h2>Meu foco</h2>
+            <p class="paragraph">
+              Meu principal objetivo esta em voltar a trabalhar com
+              desenvolvimento.
+            </p>
+            <p class="paragraph">
+              Para isso, estou aprendendo novas ferramentas e aprimorando ainda
+              mais as habilidades que possuo, para o desenvolvimento e
+              eficiência de novos sistemas e na melhoria de existentes para uma
+              melhor experiência do usuário.
+            </p>
+          </article>
+          <article>
+            <h2>Tempo livre</h2>
+            <p class="paragraph">
+              No meu tempo livre, gosto de me aventurar em atividades ao ar
+              livre e participar de eventos sociais, o que chamo carinhosamente
+              de "eventos de abraçar árvore".
+            </p>
+            <p class="paragraph">
+              Alem disso, gosto de fazer trilhas, andar de bicicleta, apreciando
+              a beleza do mundo natural. Isso me ajuda a relaxar e a me
+              reconectar comigo mesmo.
+            </p>
+          </article>
+        </section>
+
+        <section class="content">
+          <article>
+            <h2>Em construção</h2>
+          </article>
+        </section>
+        <section class="content">
+          <article>
+            <h2>Em construção</h2>
+          </article>
+        </section>
+        <section class="content">
+          <article>
+            <h2>Em construção</h2>
+          </article>
+        </section>
       </div>
+    </main>
 
-      <div class="section__text">
-        <p class="anttitle">Ola, Eu sou</p>
-        <h1 class="title">Alexsandro Silva</h1>
-        <p class="subtitle">Analista e Desenvolvedor de Sistemas</p>
-
-        <div class="btn__container">
-          <button
-            class="btn"
-            onclick="window.open('./assets/pdf/alexsandro-silva.pdf')"
-          >
-            Download Curriculo
-          </button>
-          <a href="./pages/about.html" class="btn btn__fill">Sobre Mim</a>
-        </div>
-
-        <ul class="social-media">
-          <li class="social-media-link">
-            <a href="https://github.com/alexsandro-cristiano" title="github">
-              <i class="icon-github icon"></i>
-            </a>
-          </li>
-          <li class="social-media-link">
-            <a
-              href="https://www.linkedin.com/in/alexsandro--silva/"
-              title="linkedin"
-            >
-              <i class="icon-linkedin icon"></i>
-            </a>
-          </li>
-          <li class="social-media-link" title="email">
-            <a href="mailto:acg.alexsandro@hotmail.com">
-              <i class="icon-mail icon"></i>
-            </a>
-          </li>
-
-          <li id="open-modal" class="social-media-link" title="compartilhar">
-            <i class="icon-share icon"></i>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <div id="fade" class="hide"></div>
-    <div id="modal" class="hide">
-      <button id="close-modal">
-        <i class="icon-close"></i>
-      </button>
-      <section class="modal-header">
-        <h2>Compartilhar</h2>
-      </section>
-
-      <div class="modal-body">
-        <div class="copy-container">
-          <span class="copy-icon-link">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              style="fill: rgba(0, 0, 0, 1)"
-            >
-              <path
-                d="M8.465 11.293c1.133-1.133 3.109-1.133 4.242 0l.707.707 1.414-1.414-.707-.707c-.943-.944-2.199-1.465-3.535-1.465s-2.592.521-3.535 1.465L4.929 12a5.008 5.008 0 0 0 0 7.071 4.983 4.983 0 0 0 3.535 1.462A4.982 4.982 0 0 0 12 19.071l.707-.707-1.414-1.414-.707.707a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.122-2.121z"
-              ></path>
-              <path
-                d="m12 4.929-.707.707 1.414 1.414.707-.707a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.122 2.121c-1.133 1.133-3.109 1.133-4.242 0L10.586 12l-1.414 1.414.707.707c.943.944 2.199 1.465 3.535 1.465s2.592-.521 3.535-1.465L19.071 12a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0z"
-              ></path>
-            </svg>
-          </span>
-          <input
-            type="text"
-            disabled
-            value="https://alexsandrosilva.netlify.app/"
-            class="copy-input-link"
-          />
-          <button id="copy-button-link">
-            <i class="icon icon-copy"></i>
-          </button>
-        </div>
-      </div>
-    </div>
     <script type="module" src="../assets/js/index.js"></script>
   </body>
 </html>

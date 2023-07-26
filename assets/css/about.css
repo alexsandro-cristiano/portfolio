@@ -45,7 +45,15 @@
 .content.active {
   display: block;
 }
-
+.content article h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+}
+.content article:not(:first-child) h2 {
+ 
+  margin-top: 2.4rem;
+}
 @keyframes moving {
   from {
     transform: translateX(50px);
