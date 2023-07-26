@@ -40,9 +40,9 @@ ul {
   display: flex;
   flex-direction: column;
   padding: 2.4rem;
-  /* overflow-x: hidden; */
   overflow-y: auto;
   height: calc(100vh - 7rem);
+  margin-bottom: 90px;
 }
 .text {
   font-size: 1.4rem;
