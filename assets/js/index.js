@@ -1,4 +1,3 @@
-
 function initModal() {
   const openModal = document.querySelector("#open-modal");
   const closeModal = document.querySelector("#close-modal");
@@ -27,21 +26,17 @@ function initCopy() {
   });
 }
 
+const tabs = document.querySelectorAll(".tab");
+const allContent = document.querySelectorAll(".content");
 
-  const tabs = document.querySelectorAll(".tab");
-  const allContent = document.querySelectorAll(".content");
+tabs.forEach((tab, index) => {
+  tab.addEventListener("click", (e) => {
+    tabs.forEach((tab) => tab.classList.remove("active"));
+    tab.classList.add("active");
 
-  tabs.forEach((tab, index) => {
-    tab.addEventListener("click", (e) => {
-      tabs.forEach((tab) => tab.classList.remove("active"));
-      tab.classList.add("active");
-
-      let line = document.querySelector(".line");
-      line.style.width = e.target.offsetWidth + "px";
-      line.style.left = e.target.offsetLeft + "px";
-      allContent.forEach((content) => content.classList.remove("active"));
-      allContent[index].classList.add("active");
-    });
+    allContent.forEach((content) => content.classList.remove("active"));
+    allContent[index].classList.add("active");
   });
-  initModal();
-  initCopy();
+});
+initModal();
+initCopy();

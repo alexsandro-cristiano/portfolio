@@ -8,6 +8,7 @@
   --white: #fff;
   --black: #000;
   --ice: #e8e8e8;
+  --gray: #d3d3d3;
   --dark-bg: #202529;
 }
 * {
@@ -38,11 +39,19 @@ ul {
   display: flex;
   flex-direction: column;
   padding: 2.4rem;
+  overflow-x: hidden;
+  overflow-y: scroll;
   height: calc(100vh - 7rem);
 }
 .text {
   font-size: 1.4rem;
   line-height: 1.6;
+}
+.paragraph {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  text-align: left;
+  color: var(--gray);
 }
 header {
   height: 7rem;
@@ -206,12 +215,6 @@ header {
   width: 6rem;
 }
 
-.paragraph{
-  font-size: 1.6rem;
-  line-height: 1.4;
-  text-align: justify;
-  color: #d3d3d3;
-}
 @media screen and (min-width: 1024px) {
   .avatar {
     height: 20rem;
