@@ -40,6 +40,27 @@ img {
   display: block;
   width: 100%;
 }
+
+/**/
+* {
+  scrollbar-width: thin;
+  scrollbar-color: black transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 0px;
+  height: 0px; /* A altura só é vista quando a rolagem é horizontal */
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+  padding: 2px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #000;
+}
+/**/
 .container {
   overflow: auto;
   width: 100vw;
