@@ -66,7 +66,7 @@ img {
   height: calc(100vh - 7rem);
 }
 .wrapper {
-  padding: 3.2rem 2rem;
+  padding: 3.2rem 2rem 6rem;
   max-width: 992px;
   margin: 0 auto;
 }
@@ -97,11 +97,9 @@ header {
   right: 0;
   left: 0;
   bottom: 0;
-  z-index: 20;
+  z-index: 10;
 }
 .mobile {
-  z-index: 30;
-
   width: 100vw;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -245,6 +243,11 @@ header {
   .avatar {
     height: 20rem;
     width: 20rem;
+  }
+  .wrapper {
+    padding: 3.2rem 2rem;
+    max-width: 992px;
+    margin: 0 auto;
   }
   .container,
   nav {
