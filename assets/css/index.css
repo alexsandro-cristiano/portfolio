@@ -41,7 +41,6 @@ img {
   width: 100%;
 }
 
-/**/
 * {
   scrollbar-width: thin;
   scrollbar-color: black transparent;
@@ -60,7 +59,7 @@ img {
 *::-webkit-scrollbar-thumb {
   background-color: #000;
 }
-/**/
+
 .container {
   overflow: auto;
   width: 100vw;
@@ -98,8 +97,11 @@ header {
   right: 0;
   left: 0;
   bottom: 0;
+  z-index: 20;
 }
 .mobile {
+  z-index: 30;
+
   width: 100vw;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
