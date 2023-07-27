@@ -37,12 +37,14 @@ ul {
   list-style: none;
 }
 .container {
-  display: flex;
-  flex-direction: column;
-  padding: 2.4rem;
-  overflow-y: auto;
+  overflow: auto;
+  width: 100vw;
   height: calc(100vh - 7rem);
-  padding-bottom: 6rem;
+}
+.wrapper {
+  padding: 3.2rem 2rem;
+  max-width: 992px;
+  margin: 0 auto;
 }
 .text {
   font-size: 1.4rem;

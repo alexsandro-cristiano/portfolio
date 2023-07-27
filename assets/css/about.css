@@ -1,7 +1,6 @@
 .tabs {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  /* gap: 0.8rem; */
   position: relative;
 }
 .tab {
@@ -24,22 +23,13 @@
 }
 .tab.active,
 .tab:hover {
-  color: var(--primary-color);
   opacity: 1;
+  color: var(--primary-color);
   border-bottom: 2px solid var(--primary-color) !important;
   z-index: 10;
 }
-.line {
-  position: absolute;
-  top: 34px;
-  width: 18px;
-  left: 22px;
-  height: 2px;
-  background: var(--primary-color);
-  border-radius: 10px;
-  transition: all 0.3s ease-in-out;
-}
-.content-box {
+
+.contents {
   padding: 2rem;
 }
 .content {
@@ -49,14 +39,37 @@
 .content.active {
   display: block;
 }
-.content article h2 {
+.content .title,
+.content .subtitle {
   font-size: 2rem;
   font-weight: 500;
   margin-bottom: 1.6rem;
 }
-.content article:not(:first-child) h2 {
+.content .subtitle {
   margin-top: 2.4rem;
+  font-size: 1.8rem;
 }
+.paragraph {
+  margin-top: 0.8rem;
+}
+.paragraph strong {
+  font-size: inherit;
+  color: var(--primary-color);
+  opacity: 0.9;
+}
+
+.boxCriador {
+  margin-top: 1.2rem;
+  font-size: 1.4rem;
+  border: 1px solid rebeccapurple;
+  /* display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+   */
+  gap: 0.4rem;
+}
+
 @keyframes moving {
   from {
     transform: translateX(50px);
@@ -67,6 +80,7 @@
     opacity: 1;
   }
 }
+
 @media screen and (min-width: 1024px) {
   .tab {
     padding: 1.2rem;
@@ -86,10 +100,5 @@
   }
   .tab i {
     font-size: 1.4rem;
-  }
-  .line {
-    top: 46px;
-    left: 15;
-    width: 215px;
   }
 }
