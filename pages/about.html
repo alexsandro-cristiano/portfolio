@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../assets/fonts/style.css" />
     <link rel="stylesheet" href="../assets/css/index.css" />
+    <link rel="stylesheet" href="../assets/css/timeline.css" />
     <link
       rel="shortcut icon"
       href="../assets/favicon/favicon-32x32.png"
@@ -33,7 +34,7 @@
     <main class="container">
       <div class="wrapper">
         <div class="tabs">
-          <button class="tab active">
+          <button class="tab">
             <i class="icon-user icon"></i>
             <span class="text"> sobre mim </span>
           </button>
@@ -41,7 +42,7 @@
             <i class="icon-coffee icon"></i>
             <span class="text"> experiências </span>
           </button>
-          <button class="tab">
+          <button class="tab active">
             <i class="icon-badge icon"></i>
             <span class="text"> Acadêmico </span>
           </button>
@@ -52,7 +53,7 @@
         </div>
 
         <div class="contents">
-          <article id="aboutMe" class="content active">
+          <article id="aboutMe" class="content">
             <h2 class="title">Quem é Alexsandro.</h2>
             <p class="paragraph">
               Natural do Rio de Janeiro sou o filho mais velho da Claudia com o
@@ -95,8 +96,53 @@
             <h2>Em construção</h2>
           </article>
 
-          <article id="academy" class="content">
-            <h2>Em construção</h2>
+          <article id="academy" class="content active">
+            <div class="timeline">
+              <div class="circle"></div>
+              <div class="timeline__container left">
+                <div class="box__content">
+                  <p>2023 - Graduação</p>
+                </div>
+                <div class="miniDiploma">
+                  <h2>Em breve será adicionado o certificado</h2>
+                </div>
+              </div>
+              <div class="timeline__container right">
+                <div class="box__content">
+                  <p>2018 - Pós Medio Técnico</p>
+                </div>
+                <div class="miniDiploma">
+                  <img
+                    src="../assets/imgs/certificado-tecnico.png"
+                    alt="diploma ensino fundamental"
+                  />
+                </div>
+              </div>
+              <div class="timeline__container left">
+                <div class="box__content">
+                  <p>2012 - Ensino Médio</p>
+                </div>
+                <div class="miniDiploma">
+                  <img
+                    src="../assets/imgs/certificado-medio.png"
+                    alt="diploma ensino fundamental"
+                  />
+                </div>
+              </div>
+              <div class="timeline__container right">
+                <div class="box__content">
+                  <p>2009 - Ensino Fundamental</p>
+                </div>
+                <div class="miniDiploma">
+                  <img
+                    src="../assets/imgs/certificado-fundamental.png"
+                    alt="diploma ensino fundamental"
+                  />
+                </div>
+              </div>
+
+              <div class="circle-bottom"></div>
+            </div>
           </article>
 
           <article id="skill" class="content">
@@ -105,46 +151,6 @@
         </div>
       </div>
     </main>
-    <!-- <div class="wrapper">
-        <div class="tabs">
-          <button class="tab active">
-            <i class="icon-user icon"></i>
-            <span class="text"> sobre mim </span>
-          </button>
-          <button class="tab">
-            <i class="icon-coffee icon"></i>
-            <span class="text"> experiências </span>
-          </button>
-          <button class="tab">
-            <i class="icon-badge icon"></i>
-            <span class="text"> Acadêmico </span>
-          </button>
-          <button class="tab">
-            <i class="icon-hard-drive icon"></i>
-            <span class="text"> Habilidades </span>
-          </button>
-        </div>
-      </div> -->
-    <!-- </main> -->
-    <!-- </div><main>
-        <div class="wrapperContent">
-          <section>
-            <article class="content active">
-              <h2></h2>
-              <p></p>
-            </article>
-          </section>
-          <section>
-            <article class="content active">
-              <h2></h2>
-              <p></p>
-            </article>
-          </section>
-        </div>
-
-        </div>
-      </div>
-    </main> -->
     <script type="module" src="../assets/js/index.js"></script>
   </body>
 </html>

@@ -36,6 +36,10 @@ a {
 ul {
   list-style: none;
 }
+img {
+  display: block;
+  width: 100%;
+}
 .container {
   overflow: auto;
   width: 100vw;
@@ -131,10 +135,6 @@ header {
   overflow: hidden;
   border-radius: 50%;
 }
-.avatar img {
-  display: block;
-  width: 100%;
-}
 
 .section__text {
   width: 100%;
@@ -173,7 +173,7 @@ header {
 }
 .btn {
   border: 1px solid var(--primary-color);
-  border-radius: 8px;
+  border-radius: 4px;
   padding: 1.6rem;
   color: var(--ice);
   font-size: 1.2rem;
